@@ -1,0 +1,56 @@
+body {
+	background-image: url('images/bg.gif');
+	color: #000305;
+	font-size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+}
+
+@font-face {
+    font-family: thickFont;
+    src: url('fonts/thickFont.otf');
+}
+
+.body {
+	margin: 0 auto;
+	width: 100%;
+	clear: both;
+}
+
+.mainHeader {
+	height: 40px;
+	color: #FFF;
+	font-family: thickFont;
+	font-size: 50px;
+	text-align: center;
+	padding-top: 10%;
+}
+
+.logo {
+	width: 55%;
+	padding-top: 1%;
+}
+
+.construction {
+	font-size: 25px;
+	border-style: solid;
+	margin: 4% 32%;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 700px) {
+	.logo {
+		width: 98%;
+		padding-top: 1%;
+		padding-left: 1%;
+		padding-right: 1%;
+	}
+	.construction {
+		border-style: solid;
+		margin: 1% 1%
+	}
+}
