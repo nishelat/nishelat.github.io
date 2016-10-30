@@ -29,6 +29,11 @@ a:hover, a:active {
 	to {opacity: 0.8};
 }
 
+.tempNoMobile {
+	color: black;
+	display: none;
+}
+
 .body {
 	margin: 0 auto;
 	width: 100%;
@@ -84,7 +89,9 @@ a:hover, a:active {
 	padding-right: 1%;
 }
 
-@media only screen and (min-width: 150px) and (max-width: 700px) {
+
+/*@media only screen and (min-width: 150px) and (max-width: 700px) {
+
 	.logo {
 		font-size: 150%;
 		width: 98%;
@@ -99,4 +106,5 @@ a:hover, a:active {
 	.buttons nav ul {
 		margin-right: 6%;
 	}
-}
+
+}*/
