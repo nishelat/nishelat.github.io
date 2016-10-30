@@ -147,7 +147,7 @@ a:hover, a:active {
 	height: auto;
 }
 
-@media only screen and (min-width: 150px) and (max-width: 1300px) {
+/*@media only screen and (min-width: 150px) and (max-width: 1300px) {
 	.image {
 		margin-left: 7.5%;
 	}
@@ -175,4 +175,4 @@ a:hover, a:active {
 	.MSJimage {
 		display: none;
 	}
-}
+}*/
