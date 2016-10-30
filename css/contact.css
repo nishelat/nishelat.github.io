@@ -1,0 +1,101 @@
+body {
+	background-image: url('../images/bg2.gif');
+	background-attachment: fixed;
+	color: #000305;
+	font-size: 150px;
+	font-family: Georgia, serif;
+}
+
+@keyframes fade_in {
+	from {opacity: 0};
+	to {opacity: 0.8};
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: white;
+	text-decoration: none;
+}
+
+.homeRedirect {
+	margin-top: -10%;
+	margin-left: 2%;
+	opacity: 0.8;
+	float: left;
+	animation-duration: 2s;
+	animation-name: fade_in;
+}
+
+.home {
+	font-size: 15%;
+	width: 10px;
+	border-style: solid;
+	padding: 8%;
+}
+
+.mainHeader {
+	margin-top: 1%;
+	color: white;
+	margin-right: 7%;
+	animation-duration: 2s;
+	animation-name: fade_in;
+	opacity: 0.8;
+}
+
+.logo {
+	.color: #FFF;
+	font-family: Georgia, serif;
+	font-size: 50%;
+	text-align: center;
+}
+
+.mainContent {
+	font-size: 10%;
+	line-height: 25px;
+	animation-duration: 2s;
+	animation-name: fade_in;
+	opacity: 0.8;
+}
+
+.content {
+	line-height: 150%;
+	font-size: 150%;
+	margin: auto;
+	padding: 0 auto;
+	width: 90%;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.content {
+	text-align: center;
+	float: center;
+	padding: 2%;
+	color: black;
+	background-color: white;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.content h1 {
+	font-size: 200%;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 700px) {
+	.homeRedirect {
+		display: none;
+	}
+	.content h1 {
+		font-size: 100%;
+	}
+}

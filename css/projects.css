@@ -1,0 +1,169 @@
+body {
+	background-image: url('../images/bg2.gif');
+	background-attachment: fixed;
+	color: #000305;
+	font-size: 150px;
+	font-family: Georgia, serif;
+}
+
+@keyframes fade_in {
+	from {opacity: 0};
+	to {opacity: 0.8};
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: white;
+	text-decoration: none;
+}
+
+.homeRedirect {
+	margin-top: -10%;
+	margin-left: 2%;
+	opacity: 0.8;
+	float: left;
+	animation-duration: 2s;
+	animation-name: fade_in;
+}
+
+.home {
+	font-size: 15%;
+	width: 10%;
+	border-style: solid;
+	padding: 8%;
+}
+
+.mainHeader {
+	margin-top: 1%;
+	margin-right: 5%;
+	color: white;
+	animation-duration: 2s;
+	animation-name: fade_in;
+	opacity: 0.8;
+}
+
+.mainHeader h3 {
+	font-size: 10%;
+	text-align: center;
+	margin-left: 7.5%;
+}
+
+.logo {
+	.color: #FFF;
+	font-family: Georgia, serif;
+	font-size: 50%;
+	text-align: center;
+}
+
+.mainContent {
+	font-size: 10%;
+	line-height: 25px;
+	animation-duration: 2s;
+	animation-name: fade_in;
+	opacity: 0.8;
+}
+
+.content {
+	line-height: 150%;
+	font-size: 150%;
+	margin: auto;
+	padding: 0 auto;
+	width: 90%;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.content1 {
+	margin: 1%;
+	text-align: left;
+	float: right;
+	padding: 2%;
+	color: black;
+	background-color: white;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.content1 h3 {
+	text-align: center;
+}
+
+.image1 {
+	padding-right: 2%;
+	max-width: 266px;
+	max-height: 149px;
+	width: auto;
+	height: auto;
+	float: left;
+	opacity: 1.0;
+}
+
+.content2 {
+	margin: 1%;
+	text-align: left;
+	float: right;
+	padding: 2%;
+	color: black;
+	background-color: white;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.content2 h3 {
+	text-align: center;
+}
+
+.image2 {
+	max-width: 239px;
+	max-height: 329px;
+	width: auto;
+	height: auto;
+	float: right;
+}
+
+.content3 {
+	margin: 1%;
+	text-align: left;
+	float: right;
+	padding: 2%;
+	color: black;
+	background-color: white;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.content3 h3 {
+	text-align: center;
+}
+
+.image3 {
+	padding-right: 2%;
+	max-width: 355px;
+	max-height: 145px;
+	width: auto;
+	height: auto;
+	float: left;
+	opacity: 1.0;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 700px) {
+	.homeRedirect {
+		display: none;
+	}
+	.content {
+		width: 100%;
+		padding-left: 2.5%;
+	}
+}
