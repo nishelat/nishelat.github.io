@@ -76,12 +76,10 @@ a {
 }
 
 .image {
-	padding-right: 2%;
-	max-width: 266px;
-	max-height: 149px;
-	width: auto;
-	height: auto;
-	float: left;
+	max-width: 239px;
+	max-height: 329px;
+	width: 75%;
+	height: 75%;
 	opacity: 1.0;
 }
 
@@ -142,7 +140,7 @@ a {
 	padding-bottom: 3%;
 }
 
-@media only screen and (max-width: 640px) {
+@media screen and (max-width: 480px)  {
 	.mainHeader {
     	width: 90%;
 	}
