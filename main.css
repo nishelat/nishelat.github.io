@@ -68,4 +68,9 @@ a {
     .mainHeader {
     	width: 90%;
 	}
+
+	.buttons ul li {
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
 }
