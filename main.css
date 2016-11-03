@@ -1,27 +1,13 @@
 body {
 	background-image: url('images/bg2.gif');
-	color: #000305;
+	color: #F4F0E4;
 	font-size: 150px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Lucida Console", Monaco, monospace;
 }
 
 a {
 	text-decoration: none;
-}
-
-a:link, a:visited {
 	color: white;
-	text-decoration: none;
-}
-
-a:hover, a:active {
-	color: white;
-	text-decoration: none;
-}
-
-@font-face {
-    font-family: curly;
-    src: url('fonts/curly.ttf');
 }
 
 @keyframes fade_in {
@@ -29,23 +15,23 @@ a:hover, a:active {
 	to {opacity: 0.8};
 }
 
-.tempNoMobile {
-	color: black;
-	display: none;
+@font-face {
+	font-family: monospacedfont;
+	src: url('fonts/font.ttf');
 }
 
 .body {
-	margin: 0 auto;
 	width: 100%;
-	clear: both;
+	margin: auto;
 }
 
 .mainHeader {
-	color: #FFF;
-	font-family: Georgia, serif;
+	color: white;
 	font-size: 25%;
 	text-align: center;
-	margin-top: 7%;
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 8%;
 	animation-duration: 2s;
 	animation-name: fade_in;
 	opacity: 0.8;
@@ -55,7 +41,6 @@ a:hover, a:active {
 	float: center;
 	height: auto;
 	color: #FFF;
-	font-family: Georgia, serif;
 	font-size: 20%;
 	text-align: center;
 	padding-top: 2%;
@@ -64,47 +49,23 @@ a:hover, a:active {
 	opacity: 0.8;
 }
 
-.buttons nav {
-	height: 20px;
+.buttons ul {
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
 }
 
-.buttons nav ul {
-	padding-top: 4%;
-	list-style: none;
-}
-
-.buttons nav ul li {
-	display: inline;
+.buttons ul li {
+	display: inline-block;
 	border-style: solid;
 	padding: 1%;
-	margin: 0 3%;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-top: 3%;
 }
 
-.logo {
-	width: 98%;
-	height: auto;
-	font-size: 250%;
-	padding-top: 1%;
-	padding-left: 1%;
-	padding-right: 1%;
+@media only screen and (max-width: 640px) {
+    .mainHeader {
+    	width: 90%;
+	}
 }
-
-
-/*@media only screen and (min-width: 150px) and (max-width: 700px) {
-
-	.logo {
-		font-size: 150%;
-		width: 98%;
-		padding-top: 1%;
-		padding-left: 1%;
-		padding-right: 1%;
-	}
-	.buttons nav ul li {
-		display: inline-block;
-		margin-top: 2%;
-	}
-	.buttons nav ul {
-		margin-right: 6%;
-	}
-
-}*/
