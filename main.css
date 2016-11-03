@@ -76,7 +76,7 @@ a {
 	}
 }
 
-@media only screen and (max-device-width: 100px) {
+@media only screen and (max-device-width: 1000px) {
 
     .mainHeader {
     	width: 90%;
