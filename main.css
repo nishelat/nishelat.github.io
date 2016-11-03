@@ -66,6 +66,10 @@ a {
 
 @media only screen and (max-width: 640px) {
 
+
+	.body {
+		display: none;
+	}
     .mainHeader {
     	width: 90%;
 	}
@@ -78,6 +82,10 @@ a {
 
 @media only screen and (max-device-width: 640px) {
 
+
+	.body {
+		display: none;
+	}
     .mainHeader {
     	width: 90%;
 	}
