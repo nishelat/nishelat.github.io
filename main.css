@@ -64,7 +64,7 @@ a {
 	margin-top: 3%;
 }
 
-/*@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 640px) {
 
     .mainHeader {
     	width: 90%;
@@ -76,7 +76,7 @@ a {
 	}
 }
 
-@media only screen and (max-device-width: 640px) {
+@media only screen and (max-device-width: 100px) {
 
     .mainHeader {
     	width: 90%;
@@ -86,4 +86,4 @@ a {
 		margin-top: 5%;
 		margin-bottom: 5%;
 	}
-}*/
+}
