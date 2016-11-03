@@ -2,7 +2,7 @@ body {
 	background-image: url('images/bg2.gif');
 	color: #F4F0E4;
 	font-size: 150px;
-	font-family: Courier, monospace;
+	font-family: "Lucida Console", monospace;
 }
 
 a {
@@ -64,140 +64,26 @@ a {
 	margin-top: 3%;
 }
 
-@media only screen and (max-width: 640px) {
-	body {
-	background-image: url('images/bg2.gif');
-	color: #F4F0E4;
-	font-size: 150px;
-	font-family: Courier, monospace;
-}
+/*@media only screen and (max-width: 640px) {
 
-a {
-	text-decoration: none;
-	color: white;
-}
+    .mainHeader {
+    	width: 90%;
+	}
 
-@keyframes fade_in {
-	from {opacity: 0};
-	to {opacity: 0.8};
-}
-
-@font-face {
-	font-family: monospacedfont;
-	src: url('fonts/font.ttf');
-}
-
-.body {
-	width: 100%;
-	margin: auto;
-}
-
-.mainHeader {
-	color: white;
-	font-size: 25%;
-	text-align: center;
-	width: 90%;
-	margin: 0 auto;
-	padding-top: 8%;
-	animation-duration: 2s;
-	animation-name: fade_in;
-	opacity: 0.8;
-}
-
-.buttons {
-	float: center;
-	height: auto;
-	color: #FFF;
-	font-size: 20%;
-	text-align: center;
-	padding-top: 2%;
-	animation-duration: 2s;
-	animation-name: fade_in;
-	opacity: 0.8;
-}
-
-.buttons ul {
-	width: 80%;
-	margin: 0 auto;
-	padding: 0;
-}
-
-.buttons ul li {
-	display: inline-block;
-	border-style: solid;
-	padding: 1%;
-	margin-left: 3%;
-	margin-right: 3%;
-	margin-top: 5%;
-	margin-bottom: 5%;
-}
+	.buttons ul li {
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
 }
 
 @media only screen and (max-device-width: 640px) {
-	body {
-	background-image: url('images/bg2.gif');
-	color: #F4F0E4;
-	font-size: 150px;
-	font-family: Courier, monospace;
-}
 
-a {
-	text-decoration: none;
-	color: white;
-}
+    .mainHeader {
+    	width: 90%;
+	}
 
-@keyframes fade_in {
-	from {opacity: 0};
-	to {opacity: 0.8};
-}
-
-@font-face {
-	font-family: monospacedfont;
-	src: url('fonts/font.ttf');
-}
-
-.body {
-	width: 100%;
-	margin: auto;
-}
-
-.mainHeader {
-	color: white;
-	font-size: 25%;
-	text-align: center;
-	width: 90%;
-	margin: 0 auto;
-	padding-top: 8%;
-	animation-duration: 2s;
-	animation-name: fade_in;
-	opacity: 0.8;
-}
-
-.buttons {
-	float: center;
-	height: auto;
-	color: #FFF;
-	font-size: 20%;
-	text-align: center;
-	padding-top: 2%;
-	animation-duration: 2s;
-	animation-name: fade_in;
-	opacity: 0.8;
-}
-
-.buttons ul {
-	width: 80%;
-	margin: 0 auto;
-	padding: 0;
-}
-
-.buttons ul li {
-	display: inline-block;
-	border-style: solid;
-	padding: 1%;
-	margin-left: 3%;
-	margin-right: 3%;
-	margin-top: 5%;
-	margin-bottom: 5%;
-}
-}
+	.buttons ul li {
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+}*/
