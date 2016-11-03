@@ -74,3 +74,14 @@ a {
 		margin-bottom: 5%;
 	}
 }
+
+@media only screen and (max-device-width: 640px) {
+    .mainHeader {
+    	width: 90%;
+	}
+
+	.buttons ul li {
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+}
