@@ -1,82 +1,67 @@
 body {
-	background-image: url('images/bg2.gif');
-	color: #F4F0E4;
+	background-color: white;
+	font-family: Montserrat;
 	font-size: 150px;
-	font-family: "Lucida Console", monospace;
+	margin: 0;
+	padding: 0;
+	color: #262626;
 }
 
 a {
 	text-decoration: none;
-	color: white;
+	color: black;
+	opacity: 1;
 }
 
-@keyframes fade_in {
-	from {opacity: 0};
-	to {opacity: 0.8};
+a:hover, a:active {
+	opacity: 0.5;
 }
 
 @font-face {
-	font-family: monospacedfont;
-	src: url('fonts/font.ttf');
+	font-family: Montserrat;
+	src:url('fonts/Montserrat-Regular.otf');
 }
 
-.body {
-	width: 100%;
-	margin: auto;
-}
 
-.mainHeader {
-	color: white;
-	font-size: 25%;
-	text-align: center;
+#canvas {
 	width: 80%;
-	margin: 0 auto;
-	padding-top: 8%;
-	animation-duration: 2s;
-	animation-name: fade_in;
-	opacity: 0.8;
+	margin: 5%;
+	padding: 5%;
+	border-style: solid;
+	border-radius: 5px;
+	border-color: silver;
 }
 
-.buttons {
-	float: center;
-	height: auto;
-	color: #FFF;
+#name {
 	font-size: 20%;
 	text-align: center;
-	padding-top: 2%;
-	animation-duration: 2s;
-	animation-name: fade_in;
-	opacity: 0.8;
 }
 
-.buttons ul {
-	width: 80%;
-	margin: 0 auto;
+#nav ul {
+	margin: auto;
 	padding: 0;
+	padding-top: 3%;
+	text-align: center;
 }
 
-.buttons ul li {
-	display: inline-block;
-	border-style: solid;
-	padding: 1%;
-	margin-left: 3%;
-	margin-right: 3%;
-	margin-top: 3%;
+#nav ul li {
+	display: inline;
+	font-size: 75%;
+	padding: 0 3%;
 }
 
-@media (max-width: 480px) {
+#content {
+	width: 60%;
+	margin: auto;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 15%;
+	padding-top: 5%;
+	line-height: 35px;
+}
 
-    .mainHeader {
-    	width: 90%;
-	}
-
-	.buttons {
-		width: 90%;
-		margin: auto;
-	}
-
-	.buttons ul li {
-		margin-top: 5%;
-		margin-bottom: 5%;
-	}
+#content img {
+	width: 200px;
+	float: right;
+	padding-left: 5%;
+	padding-bottom: 5%;
 }
