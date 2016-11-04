@@ -61,3 +61,11 @@ a:hover, a:active {
 	line-height: 35px;
 	text-align: center;
 }
+
+@media screen and (max-width: 640px) {
+
+	#content {
+		width: 90%;
+	}
+
+}
