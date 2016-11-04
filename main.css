@@ -65,3 +65,31 @@ a:hover, a:active {
 	padding-left: 5%;
 	padding-bottom: 5%;
 }
+
+@media screen and (max-width: 640px) {
+
+	#content {
+		width: 90%;
+	}
+
+	#content img {
+		width: 90%;
+		float: none;
+		padding: 0;
+		margin: 5%;
+	}
+}
+
+@media screen and (max-device-width: 640px) {
+
+	#content {
+		width: 90%;
+	}
+
+	#content img {
+		width: 90%;
+		float: none;
+		padding: 0;
+		margin: 5%;
+	}
+}
