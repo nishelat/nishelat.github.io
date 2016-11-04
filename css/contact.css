@@ -1,94 +1,63 @@
 body {
-	background-image: url('../images/bg2.gif');
-	background-attachment: fixed;
-	color: #F4F0E4;
+	background-color: white;
+	font-family: Montserrat;
 	font-size: 150px;
-	font-family: Georgia, serif;
-}
-
-@keyframes fade_in {
-	from {opacity: 0};
-	to {opacity: 0.8};
+	margin: 0;
+	padding: 0;
+	color: #262626;
 }
 
 a {
 	text-decoration: none;
-	color: white;
+	color: black;
+}
+
+a:hover, a:active {
+	opacity: 0.5;
 }
 
 @font-face {
-	font-family: monospacedfont;
-	src: url('../fonts/font.ttf');
+	font-family: Montserrat;
+	src:url('../fonts/Montserrat-Regular.otf');
 }
 
-.body {
-	width: 100%;
-	margin: auto;
-}
-
-.home {
-	float: left;
-	padding: 0.5%;
-	margin-left: 1%;
-	margin-top: 1%;
-	font-size: 12%;
+#canvas {
+	width: 80%;
+	margin: 5%;
+	padding: 5%;
 	border-style: solid;
-	animation-duration: 2s;
-	animation-name: fade_in;
-	opacity: 0.8;
+	border-radius: 5px;
+	border-color: silver;
 }
 
-.mainHeader {
-	color: white;
+#name {
 	font-size: 20%;
 	text-align: center;
-	width: 50%;
-	margin: 0 auto;
-	padding-top: 2%;
-	animation-duration: 2s;
-	animation-name: fade_in;
-	opacity: 0.8;
 }
 
-.mainHeader h3 {
-	font-size: 60%;
+#currentTab {
+	opacity: 0.5;
+}
+
+#nav ul {
+	margin: auto;
+	padding: 0;
+	padding-top: 3%;
 	text-align: center;
+}
+
+#nav ul li {
+	display: inline;
+	font-size: 75%;
+	padding: 0 3%;
 }
 
 #content {
+	width: 60%;
+	margin: auto;
+	font-family: "Times New Roman", Times, serif;
 	font-size: 15%;
-	line-height: 30px;
-	animation-duration: 2s;
-	animation-name: fade_in;
-	opacity: 0.8;
-	width: 90%;
-	margin: 1% auto;
-	padding: 1%;
-	color: black;
-	background-color: white;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
+	padding-top: 5%;
+	line-height: 35px;
 	text-align: center;
-}
-
-@media screen and (max-width: 480px)  {
-	.mainHeader {
-    	width: 90%;
-	}
-
-	#content {
-		width: 90%;
-		margin: 3% auto;
-		padding: 2%;
-		float: none;
-	}
-
-	#content h3 {
-		font-size: 85%;
-	}
-
-	#content h2 {
-		font-size: 95%;
-	}
 }
