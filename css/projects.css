@@ -60,13 +60,97 @@ a:hover, a:active {
 #content {
 	animation-name: fadein;
 	animation-duration: 2s;
-	width: 60%;
+	width: 90%;
 	margin: auto;
 	font-family: Georgia, serif;
 	font-size: 15%;
-	padding-top: 5%;
+	padding-top: 3%;
 	line-height: 35px;
 	text-align: center;
+}
+
+#content ul {
+	margin: 3% 0;
+	padding: 0;
+}
+
+#content ul li {
+	display: inline;
+	padding: 0 6%;
+}
+
+#studybuddy img {
+	width: 150px;
+}
+
+#journal img {
+	width: 150px;
+}
+
+#battlegame img {
+	width: 150px;
+}
+
+/* Hidden pages start here! */
+
+#studybuddypage {
+	animation-name: fadein;
+	animation-duration: 1s;
+	font-family: Georgia, serif;
+	display: none;
+}
+
+#studybuddypage img {
+	padding-top: 3%;
+	width: 200px;
+	float: left;
+	padding-right: 5%;
+	padding-bottom: 5%;
+}
+
+#studybuddytext {
+	padding-top: 3%;
+	font-size: 13%;
+}
+
+#journalpage {
+	animation-name: fadein;
+	animation-duration: 1s;
+	font-family: Georgia, serif;
+	display: none;
+}
+
+#journalpage img {
+	padding-top: 3%;
+	width: 200px;
+	float: left;
+	padding-right: 5%;
+	padding-bottom: 5%;
+}
+
+#journaltext {
+	padding-top: 3%;
+	font-size: 13%;
+}
+
+#battlegamepage {
+	animation-name: fadein;
+	animation-duration: 1s;
+	font-family: Georgia, serif;
+	display: none;
+}
+
+#battlegamepage img {
+	padding-top: 3%;
+	width: 200px;
+	float: left;
+	padding-right: 5%;
+	padding-bottom: 5%;
+}
+
+#battlegametext {
+	padding-top: 3%;
+	font-size: 13%;
 }
 
 @media screen and (max-width: 640px) {
@@ -74,9 +158,6 @@ a:hover, a:active {
 	#name img {
 		width: 90%;
 		margin: auto;
-	}
-	#content {
-		width: 90%;
 	}
 
 }
