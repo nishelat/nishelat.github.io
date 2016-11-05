@@ -16,6 +16,11 @@ a:hover, a:active {
 	opacity: 0.5;
 }
 
+@keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
 @font-face {
 	font-family: Montserrat;
 	src:url('../fonts/Montserrat-Regular.otf');
@@ -52,19 +57,33 @@ a:hover, a:active {
 	padding: 0 3%;
 }
 
-#content {
+.content {
+	animation-name: fadein;
+	animation-duration: 2s;
 	width: 60%;
 	margin: auto;
-	font-family: "Times New Roman", Times, serif;
+	font-family: Georgia, serif;
 	font-size: 15%;
 	padding-top: 5%;
 	line-height: 35px;
 	text-align: center;
 }
 
+.otherlinks {
+	padding-top: 5%;
+}
+
+.otherlinks img {
+	width: 50px;
+}
+
 @media screen and (max-width: 640px) {
 
-	#content {
+	#name img {
+		width: 90%;
+		margin: auto;
+	}
+	.content {
 		width: 90%;
 	}
 

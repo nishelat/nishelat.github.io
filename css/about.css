@@ -16,6 +16,11 @@ a:hover, a:active {
 	opacity: 0.5;
 }
 
+@keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
 @font-face {
 	font-family: Montserrat;
 	src:url('../fonts/Montserrat-Regular.otf');
@@ -53,9 +58,11 @@ a:hover, a:active {
 }
 
 .content {
+	animation-name: fadein;
+	animation-duration: 2s;
 	width: 60%;
 	margin: auto;
-	font-family: "Times New Roman", Times, serif;
+	font-family: Georgia, serif;
 	font-size: 15%;
 	padding-top: 5%;
 	line-height: 35px;
@@ -96,6 +103,10 @@ a:hover, a:active {
 
 @media screen and (max-width: 640px) {
 
+	#name img {
+		width: 90%;
+		margin: auto;
+	}
 	.content {
 		width: 90%;
 	}
