@@ -160,4 +160,25 @@ a:hover, a:active {
 		margin: auto;
 	}
 
+	#studybuddypage img {
+		width: 90%;
+		float: none;
+		padding: 0;
+		margin: 2%;
+	}
+
+	#journalpage img {
+		width: 90%;
+		float: none;
+		padding: 0;
+		margin: 2%;
+	}
+
+	#battlegamepage img {
+		width: 90%;
+		float: none;
+		padding: 0;
+		margin: 2%;
+	}
+
 }
