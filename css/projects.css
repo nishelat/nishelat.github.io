@@ -91,6 +91,10 @@ a:hover, a:active {
 	width: 150px;
 }
 
+#travelyze img {
+	width: 150px;
+}
+
 /* Hidden pages start here! */
 
 #studybuddypage {
@@ -149,6 +153,26 @@ a:hover, a:active {
 }
 
 #battlegametext {
+	padding-top: 3%;
+	font-size: 13%;
+}
+
+#travelyzepage {
+	animation-name: fadein;
+	animation-duration: 1s;
+	font-family: Georgia, serif;
+	display: none;
+}
+
+#travelyzepage img {
+	padding-top: 3%;
+	width: 200px;
+	float: left;
+	padding-right: 5%;
+	padding-bottom: 5%;
+}
+
+#travelyzetext {
 	padding-top: 3%;
 	font-size: 13%;
 }
