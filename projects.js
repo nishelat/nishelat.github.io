@@ -19,6 +19,14 @@ function showBattlegame() {
 	});
 }
 
+function showTravelyze() {
+	document.getElementById('travelyze').addEventListener('click', function() {
+		document.getElementById('content').style.display = "none";
+		document.getElementById('travelyzepage').style.display = "inline";
+	});
+}
+
 showStudybuddy();
 showJournal();
 showBattlegame();
+showTravelyze();
