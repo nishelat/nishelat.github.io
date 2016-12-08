@@ -260,9 +260,9 @@ a {
 		font-size: 20px;
 		border-width: thin;
 		padding: 2%;
-		margin-bottom: 10%;
 	}
 	#contact {
 		font-size: 25px;
+		padding-top: 25%;
 	}
 }
