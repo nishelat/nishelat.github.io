@@ -251,10 +251,14 @@ a {
 	#github {
 		width: 40%;
 		left: 5%;
+		animation-iteration-count: 0;
+		border-width: thin;
 	}
 	#devpost {
 		width: 40%;
 		right: 5%;
+		animation-iteration-count: 0;
+		border-width: thin;
 	}
 	#back {
 		font-size: 20px;
