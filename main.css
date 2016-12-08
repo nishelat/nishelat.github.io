@@ -259,8 +259,8 @@ a {
 	#back {
 		font-size: 20px;
 		border-width: thin;
-		padding: 1%;
-		padding-bottom: 2%;
+		padding: 2%;
+		margin-bottom: 2%;
 	}
 	#contact {
 		font-size: 25px;
