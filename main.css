@@ -232,22 +232,23 @@ a {
 	}
 	#one {
 		font-size: 40px;
-		padding-top: 5%;
+		padding-top: 8%;
 	}
 	#two {
 		font-size: 40px;
-		padding-top: 5%;
+		padding-top: 8%;
 	}
 	#three {
 		font-size: 40px;
-		padding-top: 5%;
+		padding-top: 8%;
 	}
 	#four {
 		font-size: 40px;
-		padding-top: 5%;
+		padding-top: 8%;
 	}
 	.swipe {
 		font-size: 25px;
+		padding-top: 10%;
 	}
 	#see_more {
 		width: 60%;
