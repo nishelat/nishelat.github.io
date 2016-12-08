@@ -1,0 +1,267 @@
+body {
+	background-image: url('images/bg.png');
+	background-color: #ffb347;
+	color: white;
+	cursor: default;
+	animation-name: intro;
+	animation-duration: 2s;
+    transition: background 1s;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+@keyframes intro {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes shake {
+	0% {}
+	50% {transform: rotate(-10deg);}
+	100% {transform: rotate(0deg);}
+}
+
+@keyframes shakebuttons {
+	0% {}
+	50% {font-size: 32px;}
+	100% {font--size: 30px;}
+}
+
+@font-face {
+	font-family: Block;
+	src:url('fonts/block.ttf');
+}
+
+@font-face {
+	font-family: SmallBlock;
+	src:url('fonts/small_block.ttf');
+}
+
+@font-face {
+	font-family: Script;
+	src:url('fonts/script.ttf');
+}
+
+#header {
+	font-family: Block;
+	font-size: 100px;
+	text-align: center;
+	margin: 5% 0;
+}
+
+.swipe {
+	font-family: Helvetica;
+	font-size: 90px;
+	font-weight: bold;
+}
+
+#swipeleft {
+	float: left;
+	padding-left: 3%;
+	-webkit-transition: opacity 0.25s;
+	animation-name: shake;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+}
+
+#swipeleft:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+#swiperight {
+	float: right;
+	padding-right: 3%;
+	-webkit-transition: opacity 0.25s;
+	animation-name: shake;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+}
+
+#swiperight:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+#one {
+	font-family: SmallBlock;
+	font-size: 70px;
+	width: 70%;
+	margin: 5% auto;
+	text-align: center;
+}
+
+#two {
+	font-family: SmallBlock;
+	font-size: 70px;
+	width: 70%;
+	margin: 5% auto;
+	text-align: center;
+	display: none;
+}
+
+#three {
+	font-family: SmallBlock;
+	font-size: 70px;
+	width: 70%;
+	margin: 5% auto;
+	text-align: center;
+	display: none;
+}
+
+#four {
+	font-family: SmallBlock;
+	font-size: 70px;
+	width: 70%;
+	margin: 5% auto;
+	text-align: center;
+	display: none;
+}
+
+#see_more {
+	font-family: Script;
+	font-weight: bold;
+	font-size: 30px;
+	border-style: solid;
+	width: 10%;
+	margin: 2% auto;
+	padding: 0.5%;
+	text-align: center;
+	border-radius: 5px;
+	position: absolute;
+	left: 1px;
+	right: 1px;
+	transition: margin 1s;
+}
+
+#see_more:hover {
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+#projects {
+	display: none;
+}
+
+#back {
+	font-family: Script;
+	font-weight: bold;
+	font-size: 30px;
+	border-style: solid;
+	width: 10%;
+	margin: auto;
+	padding: 0.5%;
+	text-align: center;
+	border-radius: 5px;
+	position: absolute;
+	top: 5%;
+	left: 1px;
+	right: 1px;
+	transition: top 1s;
+}
+
+#back:hover {
+	top: 6%;
+}
+
+#github {
+	font-family: Script;
+	font-weight: bold;
+	font-size: 30px;
+	border-style: solid;
+	width: 20%;
+	margin: auto;
+	padding: 0.5%;
+	text-align: center;
+	border-radius: 5px;
+	position: absolute;
+	top: 45%;
+	bottom: 45%;
+	left: 25%;
+	right: 50%;
+	transition: transform 1s;
+	animation-name: shakebuttons;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+#github:hover {
+	transform: rotate(-5deg);
+}
+
+#devpost {
+	font-family: Script;
+	font-weight: bold;
+	font-size: 30px;
+	border-style: solid;
+	width: 20%;
+	margin: auto;
+	padding: 0.5%;
+	text-align: center;
+	border-radius: 5px;
+	position: absolute;
+	top: 45%;
+	bottom: 45%;
+	left: 50%;
+	right: 25%;
+	transition: transform 1s;
+	animation-name: shakebuttons;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+#devpost:hover {
+	transform: rotate(5deg);
+}
+
+#contact {
+	display: none;
+	font-family: Script;
+	font-weight: bold;
+	font-size: 45px;
+	width: 80%;
+	margin: auto;
+	padding-top: 15%;
+	text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+	#header {
+		font-size: 50px;
+	}
+	#one {
+		font-size: 50px;
+	}
+	#two {
+		font-size: 50px;
+	}
+	#three {
+		font-size: 50px;
+	}
+	#four {
+		font-size: 50px;
+	}
+	.swipe {
+		font-size: 70px;
+	}
+	#see_more {
+		width: 60%;
+	}
+	#github {
+		width: 40%;
+		left: 5%;
+	}
+	#devpost {
+		width: 40%;
+		right: 5%;
+	}
+	#back {
+		font-size: 20px;
+	}
+	#contact {
+		font-size: 25px;
+	}
+}
