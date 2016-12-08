@@ -229,6 +229,7 @@ a {
 @media screen and (max-width: 800px) {
 	#header {
 		font-size: 35px;
+		margin-bottom: 5%;
 	}
 	#one {
 		font-size: 40px;
@@ -247,18 +248,22 @@ a {
 	}
 	#see_more {
 		width: 60%;
+		border-width: thin;
+		font-size: 25px;
 	}
 	#github {
 		width: 40%;
 		left: 5%;
 		animation-iteration-count: 0;
 		border-width: thin;
+		font-size: 25px;
 	}
 	#devpost {
 		width: 40%;
 		right: 5%;
 		animation-iteration-count: 0;
 		border-width: thin;
+		font-size: 25px;
 	}
 	#back {
 		font-size: 20px;
