@@ -42,8 +42,6 @@ a {
 }
 
 #banner {
-	animation-name: fadeIn;
-	animation-duration: 1s;
 	position: fixed;
 	width: 100%;
 	background-color: black;
@@ -51,8 +49,6 @@ a {
 }
 
 #header {
-	animation-name: fadeIn;
-	animation-duration: 1s;
 	width: 30%;
 	font-size: 20%;
 	float: left;
