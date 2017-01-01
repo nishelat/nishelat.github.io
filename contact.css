@@ -186,6 +186,7 @@ a {
 #letter {
 	padding: 15px;
 	background-image: url('images/blacksquare.png');
+	text-align: center;
 }
 
 @media screen and (max-width: 1100px) {
