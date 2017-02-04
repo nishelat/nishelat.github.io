@@ -2,50 +2,67 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Nishir Shelat</title>
+	<title>Nishir Shelat - Home</title>
 	<link rel="stylesheet" href="main.css" type="text/css"/>
 	<link rel="icon" href="images/icon.png"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+	<div id="backgroundWrapper">
+	<div id="mobileNav">
+		<div id="innermenuButton">
+			<img src="images/menu.png">
+		</div>
+		<ul>
+			<a href="index.html"><li>home</li></a>
+			<a href="about.html"><li>about</li></a>
+			<a href="portfolio.html"><li>portfolio</li></a>
+			<a href="https://drive.google.com/file/d/0B6n5mOU9aai3SWs3UTRkbk45X3M/view"><li>resume</li></a>
+		</ul>
+	</div>
 	<div id="banner">
-		<div id="header">
-			<div id="logo"><a href="index.html"><img src="images/logo.png"></a></div>
-			<div id="subtitle">Computer Engineering & Computer Science</div>
-		</div>
-		<img src="images/menu.png" id="menuIMG">
-		<div id="mobileNav">
-			<ul>
-				<a href="biography.html"><li id="navLink">Biography</li></a>
-				<a href="education.html"><li id="navLink">Education</li></a>
-				<a href="projects.html"><li id="navLink">Projects</li></a>
-				<a href="https://drive.google.com/open?id=0B6n5mOU9aai3SWs3UTRkbk45X3M"><li id="navLink">Resume</li></a>
-				<a href="contact.html"><li id="navLink">Contact</li></a>
-			</ul>
-		</div>
 		<div id="nav">
 			<ul>
-				<div class="dropdown"><li>About</li><div id="about">
-				<div id="dropdownList"><ul>
-					<a href="biography.html"><li>Biography</li></a>
-					<a href="education.html"><li>Education</li></a>
-					<a href="projects.html"><li>Projects</li></a>
-				</ul></div>
-			</div></div>
-				<a href="https://drive.google.com/open?id=0B6n5mOU9aai3SWs3UTRkbk45X3M"><li id="navLink">Resume</li></a>
-				<a href="contact.html"><li id="navLink">Contact</li></a>
+				<a href="index.html"><li>home</li></a>
+				<a href="about.html"><li>about</li></a>
+				<a href="portfolio.html"><li>portfolio</li></a>
+				<a href="https://drive.google.com/file/d/0B6n5mOU9aai3SWs3UTRkbk45X3M/view"><li>resume</li></a>
 			</ul>
 		</div>
+		<a href="index.html"><div id="logo" class="centered">
+			<div id="logoText" class="centered">NS</div>
+		</div></a>
+		<div id="introLine" class="centered">
+			nishir shelat<div id="marquee">developer &nbsp&nbsp creator &nbsp&nbsp leader &nbsp&nbsp trojan</div>
+		</div>
+		<div id="menuButton">
+			<img src="images/menu.png">
+		</div>
 	</div>
-	<div id="slideshow">
-		<img src="images/sanfrancisco.jpg">
+	<div id="content">
+		<div id="intro">
+		<div class="sectionHeader">Hello there! It's nice to meet you.</div>
+			<img src="images/me.jpg">
+			My name is Nishir Shelat. As a Computer Engineering and Computer Science student at the University of Southern California, Silicon Valley native, video gamer, and lover of technology, I am fascinated by the limitless potential that both software and hardware have for the world! I spend a lot of time working on innovative projects at hackathons, polishing my website (which I made from scratch), and picking up new languages and skills from online tutorials.<br><br>You can read more about me <a class="button" href="about.html">here</a>, and view my resume <a class="button" href="https://drive.google.com/file/d/0B6n5mOU9aai3SWs3UTRkbk45X3M/view">here</a>.
+		</div>
+		<div id="featured">
+		<div class="sectionHeader">Featured Projects</div>
+			<img src="images/projectIcons/hacktube.png">
+			<u>HackTube &#9679; SBHacks 2017 &#9679; 2nd Best Overall, Best Hack Against Harassment</u><br>
+			~ Featured as a "Staff Pick" on Devpost ~<br><br>
+			I wrote the JavaScript algorithms and designed the JSON file for this Google Chrome extension which fights online harassment by censoring derogatory YouTube comments. It dynamically accesses each page every quarter of a second and searches comments for specific words which are considered malicious, and then deletes the bad comments.<br><br>
+			<img src="images/projectIcons/succinct.png">
+			<u>Succinct &#9679; HackUCI 2017 &#9679; Organizer's Choice Award</u><br><br>
+			I led the backend members of my team and implemented Flickr's photosearch API using PHP for this web app which turns essays into visual presentations. It uses the Google Cloud Natural Language Processing API to find the main ideas of an essay, and then uses the Flickr API to find matching photos. It then composes a slideshow about the essay using both the photos and the extracted main ideas.<br><br>
+			To see a full portfolio of projects, click <a class="button" href="portfolio.html">here</a>.
+		</div>
+		<div id="contactme">
+		<div class="sectionHeader">I look forward to getting in touch with you!</div>
+		You can read more about me <a class="button" href="about.html">here</a>, view a full list of my projects <a class="button" href="portfolio.html">here</a>, view my resume <a class="button" href="https://drive.google.com/file/d/0B6n5mOU9aai3SWs3UTRkbk45X3M/view">here</a>, and contact me at <a class="button" href="mailto:nshelat@usc.edu">nshelat@usc.edu</a> or (510) 921-2536. I am always looking for new things to learn, so if you think I can help you with your next project, let me know! I would love to talk with you about my past experiences and how I can be of assistance!
+		</div>
 	</div>
-	<div id="letter">
-			Hello! My name is Nishir Shelat.<br><br>
-			Welcome to my website!<br><br>
-			As a computer engineering and computer science student at the University of Southern California, Silicon Valley native, video gamer, and lover of technology, I am fascinated by the limitless potential that both software and hardware have for the world! I spend a lot of time working on innovative projects at hackathons, polishing my website (which I made from scratch), and picking up new languages and skills from online tutorials. I am always looking for new things to learn, so if you think I can help you with your next project, let me know! I would love to talk with you about my past experiences and how I can be of assistance!<br><br>
-			Thanks for visiting my website, and I hope you enjoy your stay!
 	</div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
 </html>
