@@ -1,14 +1,13 @@
-var clicked = 0;
+document.getElementById('menuButton').addEventListener('click', function() {
+	document.body.style = "background-image: none; background-color: darkgray";
+	document.getElementById('banner').style.display = "none";
+	document.getElementById('content').style.display = "none";
+	document.getElementById('mobileNav').style.display = "block";
+});
 
-document.getElementById('menuIMG').addEventListener('click', function() {
-	if(clicked == 1) {
-		document.getElementById('mobileNav').style.display = "none";
-		document.getElementById('menuIMG').style.opacity = "1";
-		clicked = 0;
-	}
-	else {
-		document.getElementById('mobileNav').style.display = "block";
-		document.getElementById('menuIMG').style.opacity = "0.5";
-		clicked = 1;
-	}
+document.getElementById('innermenuButton').addEventListener('click', function() {
+	document.body.style = "background-image: block";
+	document.getElementById('banner').style.display = "block";
+	document.getElementById('content').style.display = "block";
+	document.getElementById('mobileNav').style.display = "none";
 });
