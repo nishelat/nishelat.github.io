@@ -228,14 +228,6 @@ a {
 	padding-bottom: 20px;
 }
 
-#featured video {
-	width: 500px;
-	display: inline;
-	float: right;
-	padding-left: 40px;
-	padding-bottom: 20px;
-}
-
 #contactme {
 	width: 80%;
 	margin: auto;
@@ -306,13 +298,6 @@ a {
 		display: none;
 	}
 	#featured img {
-		width: 80%;
-		float: none;
-		padding: 0;
-		margin: 0 10%;
-		margin-bottom: 30px;
-	}
-	#featured video {
 		width: 80%;
 		float: none;
 		padding: 0;
