@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geolocation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map" style="display: none; z-index: -100"></div>
+    <script>
+      // Note: This example requires that you consent to location sharing when
+      // prompted by your browser. If you see the error "The Geolocation service
+      // failed.", it means you probably did not give permission for the browser to
+      // locate you.
+
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 0, lng: 0},
+          zoom: 18
+        });
+        var infoWindow = new google.maps.InfoWindow({map: map});
+
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+           	// Math.floor(((pos.lat - 34) * 10000));
+            // Math.floor(((pos.lat + 119) * 10000));
+            
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('You are here!');
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+      }
+
+      var currBeacon = "init";
+      var oldBeacon = "init";
+      setInterval(function() {
+      	navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+            
+           	// document.getElementById("location").innerHTML += Math.floor(((pos.lat - 34) * 10000)) + " and ";
+           	// document.getElementById("location").innerHTML += Math.floor(((pos.lng + 118) * 10000)) + "<br>";
+           	// console.log(pos.lat + " and " + pos.lng);
+
+            oldBeacon = currBeacon;
+
+            var currBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.019610, 2) + Math.pow(pos.lng + 118.290585, 2));
+
+            // Calculate distance between curr location and curr beacon
+            var newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.019610, 2) + Math.pow(pos.lng + 118.290585, 2));
+            if(newBeaconDistance <= currBeaconDistance) {
+              currBeacon = "IRC";
+            }
+            // console.log(Math.floor(newBeaconDistance * 1000) + " from IRC");
+            newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.021842, 2) + Math.pow(pos.lng + 118.287603, 2));
+            if(newBeaconDistance <= currBeaconDistance) {
+              currBeacon = "Cromwell";
+            }
+            // console.log(Math.floor(newBeaconDistance * 1000) + " from Cromwell");
+            newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.020611, 2) + Math.pow(pos.lng + 118.284686, 2));
+            if(newBeaconDistance <= currBeaconDistance) {
+              currBeacon = "Alumni Park";
+            }
+            // console.log(Math.floor(newBeaconDistance * 1000) + " from Alumni Park");
+            newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.024598, 2) + Math.pow(pos.lng + 118.287667, 2));
+            if(newBeaconDistance <= currBeaconDistance) {
+              currBeacon = "Webb";
+            }
+            // console.log(Math.floor(newBeaconDistance * 1000) + " from Webb");
+
+            if(currBeacon != oldBeacon) {
+              document.getElementById("location").innerHTML += currBeacon + '<br>';
+            }
+
+           });
+        }, 100);
+
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBX1hIxjR4crfdluR9WxY_sfybK7RJAUg0&callback=initMap">
+    </script>
+    <div id="location" style="z-index: 100; position: fixed; top: 0px; background-color: white; min-height: 30px"></div>
+  </body>
+</html>
