@@ -46,7 +46,7 @@
             // Math.floor(((pos.lat + 119) * 10000));
             
             infoWindow.setPosition(pos);
-            infoWindow.setContent('You are here!');
+            infoWindow.setContent('');
             map.setCenter(pos);
           }, function() {
             handleLocationError(true, infoWindow, map.getCenter());
@@ -124,7 +124,7 @@
            });
       }
 
-      setInterval(checkLocation, 1000);
+      setInterval(checkLocation, 50);
 
     </script>
     <script async defer
