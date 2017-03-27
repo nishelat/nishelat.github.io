@@ -19,7 +19,7 @@
     </style>
   </head>
   <body>
-    <div id="map" style="display: block; z-index: -100; width: 90%; float: right"></div>
+    <div id="map" style="display: block; z-index: -100; width: 70%; float: right"></div>
     <script>
       // Note: This example requires that you consent to location sharing when
       // prompted by your browser. If you see the error "The Geolocation service
@@ -74,17 +74,8 @@
               lat: position.coords.latitude,
               lng: position.coords.longitude
             };
-            
-            // document.getElementById("location").innerHTML += Math.floor(((pos.lat - 34) * 10000)) + " and ";
-            // document.getElementById("location").innerHTML += Math.floor(((pos.lng + 118) * 10000)) + "<br>";
-            // console.log(pos.lat + " and " + pos.lng);
 
             oldBeacon = currBeacon;
-
-            // if(pos.lat == 34.0295114 && pos.lng == -118.2848199) {
-            //   console.log("Map error");
-            //   return;
-            // }
 
             // Calculate distance between curr location and curr beacon
             newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.01883524409942, 2) + Math.pow(pos.lng + 118.29091876745224, 2));
@@ -105,17 +96,27 @@
               currBeaconDistance = newBeaconDistance;
             }
             // console.log(Math.floor(newBeaconDistance * 1000) + " from Alumni Park");
-            newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.02457413469791, 2) + Math.pow(pos.lng + 118.28763842582703, 2));
+            newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.024765313218026, 2) + Math.pow(pos.lng + 118.28778326511383, 2));
             if(newBeaconDistance <= currBeaconDistance) {
               currBeacon = "Webb";
               currBeaconDistance = newBeaconDistance;
             }
-            newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.02708165129822, 2) + Math.pow(pos.lng + 118.27895879745483, 2));
+            newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.028384285819754, 2) + Math.pow(pos.lng + 118.28251540660858, 2));
             if(newBeaconDistance <= currBeaconDistance) {
               currBeacon = "The Row";
               currBeaconDistance = newBeaconDistance;
             }
-            console.log(Math.floor(newBeaconDistance * 1000) + " from The Row");
+            newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.02048370039241, 2) + Math.pow(pos.lng + 118.28908681869507, 2));
+            if(newBeaconDistance <= currBeaconDistance) {
+              currBeacon = "E-Quad";
+              currBeaconDistance = newBeaconDistance;
+            }
+            newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.02224883589781, 2) + Math.pow(pos.lng + 118.29104483127594, 2));
+            if(newBeaconDistance <= currBeaconDistance) {
+              currBeacon = "KAP";
+              currBeaconDistance = newBeaconDistance;
+            }
+
 
             map.setCenter(pos);
             infoWindow.setPosition(pos);
@@ -140,7 +141,7 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBX1hIxjR4crfdluR9WxY_sfybK7RJAUg0&callback=initMap">
     </script>
-    <div id="location" style="z-index: 100; position: fixed; top: 0px; background-color: white; min-height: 30px; display: inline; width: 10%; text-align: center"></div>
+    <div id="location" style="z-index: 100; position: fixed; top: 0px; background-color: white; min-height: 30px; display: inline; width: 30%; text-align: center"></div>
     <div>
       <audio id="music" loop autoplay>
         <source type="audio/mpeg">
