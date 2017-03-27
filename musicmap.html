@@ -66,6 +66,7 @@
 
       var currBeacon = "init";
       var oldBeacon = "init";
+      var currBeaconDistance = 999999;
       function checkLocation() {
         navigator.geolocation.getCurrentPosition(function(position) {
             var pos = {
@@ -79,47 +80,54 @@
 
             oldBeacon = currBeacon;
 
-            if(pos.lat == 34.0295114 && pos.lng == -118.2848199) {
-              console.log("Map error");
-              return;
-            }
-
-            var currBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.019610, 2) + Math.pow(pos.lng + 118.290585, 2));
+            // if(pos.lat == 34.0295114 && pos.lng == -118.2848199) {
+            //   console.log("Map error");
+            //   return;
+            // }
 
             // Calculate distance between curr location and curr beacon
             var newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.019610, 2) + Math.pow(pos.lng + 118.290585, 2));
             if(newBeaconDistance <= currBeaconDistance) {
               currBeacon = "IRC";
+              currBeaconDistance = newBeaconDistance;
             }
             // console.log(Math.floor(newBeaconDistance * 1000) + " from IRC");
             newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.021842, 2) + Math.pow(pos.lng + 118.287603, 2));
             if(newBeaconDistance <= currBeaconDistance) {
               currBeacon = "Cromwell";
+              currBeaconDistance = newBeaconDistance;
             }
             // console.log(Math.floor(newBeaconDistance * 1000) + " from Cromwell");
             newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.020611, 2) + Math.pow(pos.lng + 118.284686, 2));
             if(newBeaconDistance <= currBeaconDistance) {
               currBeacon = "Alumni Park";
+              currBeaconDistance = newBeaconDistance;
             }
             // console.log(Math.floor(newBeaconDistance * 1000) + " from Alumni Park");
             newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.024598, 2) + Math.pow(pos.lng + 118.287667, 2));
             if(newBeaconDistance <= currBeaconDistance) {
               currBeacon = "Webb";
+              currBeaconDistance = newBeaconDistance;
             }
-            // console.log(Math.floor(newBeaconDistance * 1000) + " from Webb");
+            newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.029788, 2) + Math.pow(pos.lng + 118.285748, 2));
+            if(newBeaconDistance <= currBeaconDistance) {
+              currBeacon = "The Row";
+              currBeaconDistance = newBeaconDistance;
+            }
+            console.log(Math.floor(newBeaconDistance * 1000) + " from The Row");
             map.setCenter(pos);
             infoWindow.setPosition(pos);
 
             if(currBeacon != oldBeacon) {
               document.getElementById("location").innerHTML += currBeacon + '<br>';
-              if(currBeacon == "IRC") {
-                document.getElementById("music").src = "IRC.mp3";
-              }
-              else if(currBeacon == "Webb") {
-                document.getElementById("music").src = "Webb.mp3";
-              }
+              // if(currBeacon == "IRC") {
+              //   document.getElementById("music").src = "IRC.mp3";
+              // }
+              // else if(currBeacon == "Webb") {
+              //   document.getElementById("music").src = "Webb.mp3";
+              // }
             }
-            console.log(pos.lat + "  " + pos.lng);
+            // console.log(pos.lat + "  " + pos.lng);
 
            });
       }
