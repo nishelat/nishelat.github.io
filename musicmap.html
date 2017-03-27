@@ -78,24 +78,26 @@
             oldBeacon = currBeacon;
 
             // Calculate distance between curr location and curr beacon
-            newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.01883524409942, 2) + Math.pow(pos.lng + 118.29091876745224, 2));
+            newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.018829686202075, 2) + Math.pow(pos.lng + 118.29098984599113, 2));
+            if(newBeaconDistance <= currBeaconDistance) {
+              currBeacon = "Parkside";
+              currBeaconDistance = newBeaconDistance;
+            }
+            newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.01919872979596, 2) + Math.pow(pos.lng + 118.2910743355751, 2));
             if(newBeaconDistance <= currBeaconDistance) {
               currBeacon = "IRC";
               currBeaconDistance = newBeaconDistance;
             }
-            // console.log(Math.floor(newBeaconDistance * 1000) + " from IRC");
             newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.02189314403895, 2) + Math.pow(pos.lng + 118.28770279884338, 2));
             if(newBeaconDistance <= currBeaconDistance) {
               currBeacon = "Cromwell";
               currBeaconDistance = newBeaconDistance;
             }
-            // console.log(Math.floor(newBeaconDistance * 1000) + " from Cromwell");
             newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.0205148240064, 2) + Math.pow(pos.lng + 118.28453242778778, 2));
             if(newBeaconDistance <= currBeaconDistance) {
               currBeacon = "Alumni Park";
               currBeaconDistance = newBeaconDistance;
             }
-            // console.log(Math.floor(newBeaconDistance * 1000) + " from Alumni Park");
             newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.024765313218026, 2) + Math.pow(pos.lng + 118.28778326511383, 2));
             if(newBeaconDistance <= currBeaconDistance) {
               currBeacon = "Webb";
