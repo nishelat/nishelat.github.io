@@ -116,6 +116,16 @@
               currBeacon = "KAP";
               currBeaconDistance = newBeaconDistance;
             }
+            newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.02182200548831, 2) + Math.pow(pos.lng + 118.28292846679688, 2));
+            if(newBeaconDistance <= currBeaconDistance) {
+              currBeacon = "Leavey";
+              currBeaconDistance = newBeaconDistance;
+            }
+            newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.02036151915764, 2) + Math.pow(pos.lng + 118.28527808189392, 2));
+            if(newBeaconDistance <= currBeaconDistance) {
+              currBeacon = "Tommy";
+              currBeaconDistance = newBeaconDistance;
+            }
 
 
             map.setCenter(pos);
