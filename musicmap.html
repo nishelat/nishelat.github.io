@@ -76,56 +76,67 @@
             };
 
             oldBeacon = currBeacon;
+            var displayString = "";
 
             // Calculate distance between curr location and curr beacon
             newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.018829686202075, 2) + Math.pow(pos.lng + 118.29098984599113, 2));
+            displayString += "Distance to Parkside: " + Math.round(newBeaconDistance * 1000) + "<br>";
             if(newBeaconDistance <= currBeaconDistance) {
               currBeacon = "Parkside";
               currBeaconDistance = newBeaconDistance;
             }
             newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.01919872979596, 2) + Math.pow(pos.lng + 118.2910743355751, 2));
+            displayString += "Distance to IRC: " + Math.round(newBeaconDistance * 1000) + "<br>";
             if(newBeaconDistance <= currBeaconDistance) {
               currBeacon = "IRC";
               currBeaconDistance = newBeaconDistance;
             }
             newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.02189314403895, 2) + Math.pow(pos.lng + 118.28770279884338, 2));
+            displayString += "Distance to Cromwell: " + Math.round(newBeaconDistance * 1000) + "<br>";
             if(newBeaconDistance <= currBeaconDistance) {
               currBeacon = "Cromwell";
               currBeaconDistance = newBeaconDistance;
             }
             newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.0205148240064, 2) + Math.pow(pos.lng + 118.28453242778778, 2));
+            displayString += "Distance to Alumni Park: " + Math.round(newBeaconDistance * 1000) + "<br>";
             if(newBeaconDistance <= currBeaconDistance) {
               currBeacon = "Alumni Park";
               currBeaconDistance = newBeaconDistance;
             }
             newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.024765313218026, 2) + Math.pow(pos.lng + 118.28778326511383, 2));
+            displayString += "Distance to Webb: " + Math.round(newBeaconDistance * 1000) + "<br>";
             if(newBeaconDistance <= currBeaconDistance) {
               currBeacon = "Webb";
               currBeaconDistance = newBeaconDistance;
             }
             newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.028384285819754, 2) + Math.pow(pos.lng + 118.28251540660858, 2));
+            displayString += "Distance to The Row: " + Math.round(newBeaconDistance * 1000) + "<br>";
             if(newBeaconDistance <= currBeaconDistance) {
               currBeacon = "The Row";
               currBeaconDistance = newBeaconDistance;
             }
             newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.02048370039241, 2) + Math.pow(pos.lng + 118.28908681869507, 2));
+            displayString += "Distance to E-Quad: " + Math.round(newBeaconDistance * 1000) + "<br>";
             if(newBeaconDistance <= currBeaconDistance) {
               currBeacon = "E-Quad";
               currBeaconDistance = newBeaconDistance;
             }
             newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.02224883589781, 2) + Math.pow(pos.lng + 118.29104483127594, 2));
+            displayString += "Distance to KAP: " + Math.round(newBeaconDistance * 1000) + "<br>";
             if(newBeaconDistance <= currBeaconDistance) {
               currBeacon = "KAP";
               currBeaconDistance = newBeaconDistance;
             }
             newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.02182200548831, 2) + Math.pow(pos.lng + 118.28292846679688, 2));
+            displayString += "Distance to Leavey: " + Math.round(newBeaconDistance * 1000) + "<br>";
             if(newBeaconDistance <= currBeaconDistance) {
               currBeacon = "Leavey";
               currBeaconDistance = newBeaconDistance;
             }
             newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.02036151915764, 2) + Math.pow(pos.lng + 118.28527808189392, 2));
+            displayString += "Distance to Tommy Trojan: " + Math.round(newBeaconDistance * 1000) + "<br>";
             if(newBeaconDistance <= currBeaconDistance) {
-              currBeacon = "Tommy";
+              currBeacon = "Tommy Trojan";
               currBeaconDistance = newBeaconDistance;
             }
 
@@ -134,7 +145,7 @@
             infoWindow.setPosition(pos);
 
             if(currBeacon != oldBeacon) {
-              document.getElementById("location").innerHTML += currBeacon + '<br>';
+              document.getElementById("location").innerHTML = currBeacon + "<br>" + displayString;
               // if(currBeacon == "IRC") {
               //   document.getElementById("music").src = "IRC.mp3";
               // }
