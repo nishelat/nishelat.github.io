@@ -67,6 +67,7 @@
       var currBeacon = "init";
       var oldBeacon = "init";
       var currBeaconDistance = 999999;
+      var newBeaconDistance = 0;
       function checkLocation() {
         navigator.geolocation.getCurrentPosition(function(position) {
             var pos = {
@@ -86,7 +87,7 @@
             // }
 
             // Calculate distance between curr location and curr beacon
-            var newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.019610, 2) + Math.pow(pos.lng + 118.290585, 2));
+            newBeaconDistance = Math.sqrt(Math.pow(pos.lat - 34.019610, 2) + Math.pow(pos.lng + 118.290585, 2));
             if(newBeaconDistance <= currBeaconDistance) {
               currBeacon = "IRC";
               currBeaconDistance = newBeaconDistance;
@@ -115,6 +116,7 @@
               currBeaconDistance = newBeaconDistance;
             }
             console.log(Math.floor(newBeaconDistance * 1000) + " from The Row");
+
             map.setCenter(pos);
             infoWindow.setPosition(pos);
 
@@ -132,7 +134,7 @@
            });
       }
 
-      setInterval(checkLocation, 50);
+      setInterval(checkLocation, 5000);
 
     </script>
     <script async defer
