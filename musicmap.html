@@ -141,6 +141,12 @@
           }
           if(oldBeacon != closestBeacon) {
             oldBeacon = closestBeacon;
+            if(document.getElementById("music").src = "IRC.mp3") {
+              document.getElementById("music").src = "Webb.mp3";
+            }
+            else {
+              document.getElementById("music").src = "IRC.mp3";
+            }
           }
           document.getElementById("location").innerHTML = oldBeacon;
           map.setCenter(pos);
