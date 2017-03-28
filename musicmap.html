@@ -141,11 +141,11 @@
           }
           if(oldBeacon != closestBeacon) {
             oldBeacon = closestBeacon;
-            document.getElementById("location").innerHTML += oldBeacon + " ";
           }
+          document.getElementById("location").innerHTML = oldBeacon;
+          map.setCenter(pos);
+          infoWindow.setPosition(pos);
         });
-        map.setCenter(pos);
-        infoWindow.setPosition(pos);
       }
 
       // var currBeacon = "init";
