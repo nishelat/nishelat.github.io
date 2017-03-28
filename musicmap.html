@@ -21,7 +21,7 @@
   <body>
     <div id="map" style="display: block; z-index: -100; width: 100%; float: right"></div>
     <div id="location" style="z-index: 100; position: fixed; top: 0px; background-color: white; padding: 5px; display: block; width: 100%; text-align: center"></div>
-    <audio id="music" src="song1.wav" controls style="position: fixed; bottom: 0px; width: 100%">
+    <audio id="music" controls style="position: fixed; bottom: 0px; width: 100%">
       <source type="audio/wav">
       Your browser does not support the audio element.
     </audio>
@@ -89,7 +89,8 @@
       var button = document.getElementById('location');
       var audio = document.getElementById('music');
       var onClick = function() {
-          audio.play(); // audio will load and then play
+          audio.src = "song1.wav";
+          audio.load(); // audio will load and then play
       };
       button.addEventListener('click', onClick, false);
 
@@ -155,12 +156,12 @@
           }
           if(oldBeacon != closestBeacon) {
             oldBeacon = closestBeacon;
-            if(document.getElementById("music").src = "song1.wav") {
-              document.getElementById("music").src = "song2.wav";
-            }
-            else {
-              document.getElementById("music").src = "song1.wav";
-            }
+            // if(document.getElementById("music").src = "song1.wav") {
+            //   document.getElementById("music").src = "song2.wav";
+            // }
+            // else {
+            //   document.getElementById("music").src = "song1.wav";
+            // }
           }
           document.getElementById("location").innerHTML = oldBeacon;
           map.setCenter(pos);
