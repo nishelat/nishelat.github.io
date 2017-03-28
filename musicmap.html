@@ -21,7 +21,7 @@
   <body>
     <div id="map" style="display: block; z-index: -100; width: 100%; float: right"></div>
     <div id="location" style="z-index: 100; position: fixed; top: 0px; background-color: white; padding: 5px; display: block; width: 100%; text-align: center"></div>
-    <audio id="music" src="IRC.mp3" loop autoplay>
+    <audio id="music" src="song1.wav" loop autoplay>
       <source type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
@@ -144,11 +144,11 @@
           }
           if(oldBeacon != closestBeacon) {
             oldBeacon = closestBeacon;
-            if(document.getElementById("music").src = "IRC.mp3") {
-              document.getElementById("music").src = "Webb.mp3";
+            if(document.getElementById("music").src = "song1.wav") {
+              document.getElementById("music").src = "song2.wav";
             }
             else {
-              document.getElementById("music").src = "IRC.mp3";
+              document.getElementById("music").src = "song1.wav";
             }
           }
           document.getElementById("location").innerHTML = oldBeacon;
