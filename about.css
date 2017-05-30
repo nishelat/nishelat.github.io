@@ -215,6 +215,7 @@ a {
 	width: 80%;
 	margin: auto;
 	font-size: 12%;
+	padding-bottom: 60px;
 }
 
 .sidelines {
@@ -259,13 +260,6 @@ a {
 	float: right;
 	padding-left: 40px;
 	padding-bottom: 20px;
-}
-
-#gay {
-	width: 80%;
-	margin: auto;
-	font-size: 12%;
-	padding-bottom: 60px;
 }
 
 
