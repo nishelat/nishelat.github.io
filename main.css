@@ -1,314 +1,192 @@
 body {
-	background-color: darkgray;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	font-family: 'Aspira', serif;
-	font-size: 200px;
-	cursor: default;
+  min-height: 75rem; /* Can be removed; just added for demo purposes */
+  cursor: default;
+  font-family: 'Lato', sans-serif;
+  background-color: white;
 }
 
 body::-webkit-scrollbar {
     width: 10px;
+    display: none;
 }
  
 body::-webkit-scrollbar-track {
-	background-color: white;
+  background-color: white;
     outline: 1px solid white;
 }
  
 body::-webkit-scrollbar-thumb {
-	background-color: gray;
+  background-color: gray;
 }
 
-@keyframes fadeOut {
-	from {opacity: 1;}
-	to {opacity: 0;}
+@keyframes fade_in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
 }
 
-@font-face {
-	src: url('fonts/Aspira.ttf');
-	font-family: Aspira;
+canvas {
+  display: block;
+  vertical-align: bottom;
 }
 
-@font-face {
-	src: url('fonts/Aspira Thin.ttf');
-	font-family: Aspira Thin;
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@font-face {
-	src: url('fonts/Aspira Bold.ttf');
-	font-family: Aspira Bold;
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
 }
 
-a {
-	text-decoration: none;
-	color: inherit;
+.jumbotron {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  margin-bottom: 0;
+  background-color: #17182f;
 }
 
-@keyframes fadeIn {
-	from {opacity: 0;}
-	to {opacity: 1;}
+.jumbotron p:last-child {
+  margin-bottom: 0;
 }
 
-.centered {
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+#name {
+  color: white;
+  animation-name: fadeIn 4s;
+}
+
+#subtitle {
+  color: white;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+#wrapper {
+  z-index: 2;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
 }
 
-#backgroundVideo {
-	z-index: -100;
-	width: 100%;
-	position: fixed;
+#selfie {
+  margin: auto;
 }
 
-.button {
-	font-family: Aspira Bold;
-	transition: opacity 0.4s;
+#aboutMe {
+  padding-top: 3rem;
+  padding-bottom: 7rem;
+  font-size: 20px;
 }
 
-.button:hover {
-	opacity: 0.5;
+.album {
+  min-height: 50rem; /* Can be removed; just added for demo purposes */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f7f7f7;
 }
 
-#banner {
-	height: 100vh;
+#projectsTitle {
+  padding-bottom: 3rem;
 }
 
-#nav {
-	z-index: 100;
-	text-align: center;
-	float: right;
-	font-size: 20px;
-	color: white;
+.card-item {
+    margin: 0 0 15px;
+    right: 0
 }
 
-#nav ul {
-	list-style-type: none;
+.card-item .card-link {
+    display: block;
+    position: relative;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
 }
 
-#nav ul li {
-	display: inline;
-	padding: 7px 10px;
-	margin: 0 15px;
-	background-color: rgba(0, 0, 0, 0.2);
-	transition: background-color 0.4s;
+.card-item .card-link .card-hover {
+    background: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s
 }
 
-#nav ul li:hover {
-	background-color: rgba(0, 0, 0, 0.7);
-	cursor: pointer;
+.card-item .card-link .card-hover:hover {
+    opacity: 0.9;
 }
 
-#mobileNav {
-	display: none;
-	font-size: 20%;
+.card-item .card-link .card-hover .card-hover-content {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    font-size: 50px;
+    text-align: center;
+    top: 35%;
+    color: #fff
 }
 
-#mobileNav ul {
-	margin-top: 100px;
-	list-style-type: none;
-	padding: 0;
+.card-item .card-link .card-hover .card-hover-content i{
+  margin-top:-12px
 }
 
-#mobileNav ul li {
-	color: white;
-	margin: 25px 0;
+.card-item .card-link .card-hover .card-hover-content h3,
+.card-item .card-link .card-hover .card-hover-content h4 {
+    margin: 0;
 }
 
-#innermenuButton {
-	position: absolute;
-	top: 15px;
-	right: 20px;
-	float: right;
-	font-size: 15%;
+.card-image {
+  max-height: 100%;
+  max-width: 100%;
 }
 
-#innermenuButton img {
-	width: 45px;
-	height: 45px;
+.modal-title{
+  font-size: 20px;
+  display: inline;
 }
 
-#logo {
-	background-color: rgba(0, 0, 0, 0.4);
-	padding: 15px;
-	color: white;
-	position: absolute;
-	top: 40px;
-	left: 40px;
-	width: 30px;
-	height: 30px;
-	float: left;
-	font-size: 15%;
+.modal-body-text{
+  font-size: 18px;
+  margin-top: 20px;
 }
 
-#introLine {
-	font-size: 40%;
-	text-align: center;
-	color: #eaeaea;
-	text-shadow: 2px 2px 8px black;
-	animation-name: fadeIn;
-	animation-duration: 1.5s;
+.modal-dialog {
+  z-index: 4;
 }
 
-#marquee {
-	font-size: 50%;
-
+.modal-btn{
+  font-size: 18px;
 }
 
-#menuButton {
-	display: none;
-	position: absolute;
-	top: 15px;
-	right: 20px;
-	float: right;
-	font-size: 15%;
+.modal-backdrop {
+    display: none;
 }
 
-#menuButton img {
-	width: 45px;
-	height: 45px;
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-#content {
-	font-family: Aspira Thin;
-	background-color: lightgray;
-	background-image: url('images/pattern.jpg');
-	text-align: left;
-}
-
-.sectionHeader {
-	background-color: white;
-	width: 125%;
-	transform: translateX(-10%);
-	font-family: Aspira;
-	margin: 50px 0;
-	padding: 60px 0;
-	text-align: center;
-	font-size: 35px;
-}
-
-#intro {
-	width: 80%;
-	margin: auto;
-	font-size: 12%;
-}
-
-#intro img {
-	width: 200px;
-	display: inline;
-	float: right;
-	padding-left: 40px;
-	padding-bottom: 20px;
-}
-
-#featured {
-	width: 80%;
-	margin: auto;
-	font-size: 12%;
-}
-
-#featured img {
-	width: 200px;
-	display: inline;
-	float: right;
-	padding-left: 40px;
-	padding-bottom: 20px;
-}
-
-#contactme {
-	width: 80%;
-	margin: auto;
-	font-size: 12%;
-	padding-bottom: 50px;
-}
-
-.sidelines {
-	line-height: 0.5;
-	text-align: center;
-}
-
-.sidelines span {
-	display: inline-block;
-	position: relative;  
-}
-
-.sidelines span:before,
-.sidelines span:after {
-	content: "";
-	position: absolute;
-	height: 5px;
-	border-bottom: 3px solid gray;
-	top: 0;
-	width: 50px;
-}
-
-.sidelines span:before {
-	right: 100%;
-	margin-right: 30px;
-}
-
-.sidelines span:after {
-	left: 100%;
-	margin-left: 30px;
+footer p {
+  margin-bottom: .25rem;
 }
 
 @media screen and (max-width: 800px) {
-	body {
-		background-image: url('images/sanfrancisco.jpg');
-	}
-	#content {
-		text-align: center;
-	}
-	#backgroundVideo {
-		display: none;
-	}
-	#banner {
-		height: 85px;
-	}
-	#logo {
-		position: absolute;
-		top: 40px;
-		left: 40px;
-		width: 20px;
-		height: 20px;
-		float: left;
-		font-size: 15%;
-	}
-	#nav {
-		display: none;
-	}
-	#menuButton {
-		display: block;
-	}
-	#intro img {
-		width: 80%;
-		float: none;
-		padding: 0;
-		margin: 0 10%;
-		margin-bottom: 30px;
-	}
-	#introLine {
-		display: none;
-	}
-	#featured img {
-		width: 80%;
-		float: none;
-		padding: 0;
-		margin: 0 10%;
-		margin-bottom: 30px;
-	}
-	.sectionHeader {
-		padding: 30px 0;
-	}
-	#firstSectionHeader {
-		margin-top: 0;
-	}
+  #selfie {
+    display: none;
+  }
 }
