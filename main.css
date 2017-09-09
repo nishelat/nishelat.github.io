@@ -164,6 +164,7 @@ canvas {
 .card-image {
   max-height: 100%;
   max-width: 100%;
+  border: solid 5px;
 }
 
 .modal-title{
