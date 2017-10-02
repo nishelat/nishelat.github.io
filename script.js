@@ -49,7 +49,7 @@ particlesJS("particles-js", {
     },
     "move": {
       "enable": true,
-      "speed": 0.2,
+      "speed": 0.5,
       "direction": "none",
       "random": true,
       "straight": false,
@@ -90,7 +90,7 @@ particlesJS("particles-js", {
         "speed": 3
       },
       "repulse": {
-        "distance": 100,
+        "distance": 150,
         "duration": 100
       },
       "push": {

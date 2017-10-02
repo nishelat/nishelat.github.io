@@ -189,6 +189,10 @@ canvas {
     display: none;
 }
 
+#image_card {
+  border: solid gray 5px;
+}
+
 
 footer {
   padding-top: 3rem;
