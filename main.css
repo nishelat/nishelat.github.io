@@ -193,8 +193,33 @@ canvas {
   border: solid gray 5px;
 }
 
+#logos {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #777;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+.logo {
+  filter: grayscale(100%);
+  margin: 0px 25px;
+  padding: 10px;
+  width: 250px;
+  height: 150px;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  transition: 0.5s;
+}
+
+.logo:hover {
+  filter: grayscale(0%);
+}
 
 footer {
+  background-color: #f7f7f7;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
