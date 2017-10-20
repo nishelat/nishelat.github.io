@@ -94,7 +94,7 @@ canvas {
   position: relative;
   margin: auto;
   max-width: 400px;
-  box-shadow: 4px 4px 5px #888;
+  box-shadow: 1px 1px 2px #888;
 }
 
 #aboutMe {
@@ -139,7 +139,7 @@ canvas {
 }
 
 .card-item .card-link .card-hover:hover {
-    opacity: 0.9;
+    opacity: 0;
 }
 
 .card-item .card-link .card-hover .card-hover-content {
@@ -167,7 +167,7 @@ canvas {
   border: solid 5px;
 }
 
-.modal-title{
+.modal-title {
   font-size: 20px;
   display: inline;
 }
@@ -190,7 +190,13 @@ canvas {
 }
 
 #image_card {
-  border: solid gray 5px;
+  filter: grayscale(20%);
+  box-shadow: 1px 1px 2px 2px #888;
+  transition: 0.7s;
+}
+
+#image_card:hover {
+  filter: grayscale(0%) brightness(125%);
 }
 
 #logos {
