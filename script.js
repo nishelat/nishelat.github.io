@@ -103,3 +103,9 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
+
+document.getElementsByTagName('canvas')[0].addEventListener("click", function() {
+  document.getElementById("hint").innerHTML = "awesome!";
+  document.getElementById("hint").style.animation = "fadeout 3s";
+  document.getElementById("hint").style.opacity = 0;
+});
