@@ -1,7 +1,7 @@
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 1500,
+      "value": 1000,
       "density": {
         "enable": true,
         "value_area": 789.1476416322727
@@ -105,7 +105,7 @@ particlesJS("particles-js", {
 });
 
 document.getElementsByTagName('canvas')[0].addEventListener("click", function() {
-  document.getElementById("hint").innerHTML = "awesome!";
-  document.getElementById("hint").style.animation = "fadeout 3s";
+  document.getElementById("hint").innerHTML = "Awesome";
+  document.getElementById("hint").style.animation = "fadeout 4s";
   document.getElementById("hint").style.opacity = 0;
 });
