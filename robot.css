@@ -1,3 +1,9 @@
+/* SHADOW EFFECT */
+
+.shadow {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
 /* LETTER N1 */
 
 #N1 {
@@ -64,7 +70,7 @@
 	width: 20px;
 	height: 150px;
 	bottom: 20px;
-	background: #adadad;
+	background: #ff6961;
 }
 
 #I2-END {
@@ -251,7 +257,7 @@
 	width: 20px;
 	height: 170px;
 	bottom: 0;
-	background: #adadad;
+	background: #ff6961;
 }
 
 #R6-LINK2 {
@@ -259,7 +265,7 @@
 	width: 20px;
 	height: 90px;
 	bottom: 100%;
-	background: #c9c9c9;
+	background: #ff6961;
 	transform-origin: 50% 100%;
 }
 
@@ -268,7 +274,7 @@
 	width: 20px;
 	height: 90px;
 	bottom: 100%;
-	background: #adadad;
+	background: #fa948e;
 	transform-origin: 50% 100%;
 }
 
@@ -277,7 +283,7 @@
 	width: 20px;
 	height: 70px;
 	bottom: 100%;
-	background: #c9c9c9;
+	background: #ff6961;
 	transform-origin: 50% 100%;
 }
 
