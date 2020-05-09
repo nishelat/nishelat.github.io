@@ -23,6 +23,7 @@ body {
 .button > a {
 	text-decoration: none;
 	color: inherit;
+	font-weight: bold;
 }
 
 #container {
@@ -87,26 +88,98 @@ body {
 	margin-bottom: 20px;
 }
 
+/* EXPERIENCE SECTION */
+
+#experience {
+	color: #444444;
+}
+
+#title {
+	margin: 5% auto 2% auto;
+	font-size: 27px;
+	text-align: center;
+}
+
+#grid {
+	font-size: 17px;
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.box {
+	background: #ffffff;
+	width: 46%;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	margin: 2%;
+}
+
+.logo {
+	max-width: 80%;
+	height: 80px;
+	object-fit: contain;
+	margin-top: 10%;
+}
+
+figcaption {
+	width: 80%;
+	margin: 8% auto 10% auto;
+}
+
+.role {
+	font-weight: bold;
+	margin-bottom: 8px; 
+}
+
+/* MOBILE SETTINGS */
+
 @media screen and (max-width: 1100px) and (orientation: portrait) {
 	.button {
 		font-size: 27px;
 		margin: 45px 45px 0 0;
 	}
+
 	#container {
 		height: 45vh;
 	}
+
 	#selfie {
 		width: 50%;
 		margin: 10% 10% 2% 10%;
 	}
+
 	#bio {
 		width: 80%;
 		font-size: 47px;
 		text-align: center;
+		padding-bottom: 40px;
 	}
+
 	#greeting {
 		font-size: 67px;
 		text-align: center;
 		margin-bottom: 40px;
+	}
+
+	#title {
+		font-size: 67px;
+		text-align: center;
+		margin-top: 80px;
+		margin-bottom: 40px;
+		width: 60%;
+	}
+
+	.box {
+		width: 96%;
+	}
+
+	.logo {
+		height: 160px;
+	}
+
+	figcaption {
+		font-size: 33px;
 	}
 }
