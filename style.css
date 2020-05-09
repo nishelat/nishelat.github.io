@@ -121,6 +121,7 @@ body {
 	height: 80px;
 	object-fit: contain;
 	margin-top: 10%;
+	pointer-events: none;
 }
 
 figcaption {
@@ -131,6 +132,33 @@ figcaption {
 .role {
 	font-weight: bold;
 	margin-bottom: 8px; 
+}
+
+/* FOOTER */
+
+footer {
+	background: #ffffff;
+	padding: 25px;
+	margin-top: 20px;
+	box-shadow: 0 6px 12px rgba(0,0,0,0.56);
+	color: #444444;
+	text-align: center;
+	font-size: 17px;
+}
+
+footer > a {
+	text-decoration: none;
+	color: #337ab7;
+	transition: 0.2s;
+}
+
+footer > a:hover {
+	color: #579c57;
+}
+
+footer > img {
+	width: 17px;
+	vertical-align: middle;
 }
 
 /* MOBILE SETTINGS */
@@ -181,5 +209,11 @@ figcaption {
 
 	figcaption {
 		font-size: 33px;
+	}
+
+	footer {
+		font-size: 27px;
+		margin-top: 30px;
+		padding: 40px;
 	}
 }
