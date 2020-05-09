@@ -1,286 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- Aha! You've found me, the code gremlin! If you want to talk to Nishir, email him at nshelat@usc.edu! -->
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="media/icon.png">
-    <title>Nishir Shelat</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-  </head>
-
-  <body>
-
-    <div id="hint">Click on the stars to interact</div>
-
-  <!-- Stars -->
-    <div id="particles-js"></div>
-    <section class="jumbotron text-center">
-      <div class="container-fluid">
-      <div class="jumbotron-heading" >
-        <h1 id="name">Nishir Shelat</h1>
-        <p class="lead text-muted" id="subtitle">Computer Engineering & Computer Science</p>
-      </div>
-      </div>
-    </section>
-  <div id="wrapper">
-    <div id="aboutMe">
-      <div class="container-fluid">
-        <div class="col-sm-6 text-center">
-          <img src="media/me.jpg" class="img-fluid img-rounded mx-auto d-block" id="selfie" class="center-block" alt="Photo not found">
-        </div>
-        <div class="col-sm-6 text-left">
-        <h2><b>Hey there!</b></h2>
-          <br/><div id="aboutMeText">My name is Nishir Shelat and I'm a software developer based in Los Angeles. As a recent computer engineering & computer science graduate from the University of Southern California, I've always been interested in developing my skills by working on new projects. On this site, I've compiled a few highlights from my personal projects so you can see how they work and what they do. I've also included several award-winning projects I've made at hackathons across the country. I hope you enjoy reading about my background and experiences, and I look forward to helping you with your next project! Feel free to email me anytime at <a href="mailto:nishelat@gmail.com">nishelat@gmail.com</a>.</div><br/>
-          <b>For more information, please check out my <a href="https://drive.google.com/file/d/0B6n5mOU9aai3SWs3UTRkbk45X3M/view?usp=sharing" target="_blank">resume</a>.</b>
-        </div>
-      </div>
-      </div>
-
-      <div class="album text-muted">
-      <h1 class="text-center" id="projectsTitle">Recent Projects</h1>
-      <div class="container-fluid">
-
-        <!-- Cards -->
-        <div class="row">
-        <div class="col-md-4 col-sm-6 card-item">
-          <a class="card-link" data-toggle="modal" href="#modal1">
-            <div class="card-hover">
-              <div class="card-hover-content">
-                Wreck-It Retail
-              </div>
-            </div>
-            <img id="image_card" class="img-responsive" src="media/wreckitretail.jpg" alt="Card Image">
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-6 card-item">
-          <a class="card-link" data-toggle="modal" href="#modal2">
-            <div class="card-hover">
-              <div class="card-hover-content">
-                Superflick
-              </div>
-            </div>
-            <img id="image_card" class="img-responsive" src="media/superflick.jpg" alt="Card Image">
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-6 card-item">
-          <a class="card-link" data-toggle="modal" href="#modal3">
-            <div class="card-hover">
-              <div class="card-hover-content">
-                Spotify World Music
-              </div>
-            </div>
-            <img id="image_card" class="img-responsive" src="media/spotify.png" alt="Card Image">
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-6 card-item">
-          <a class="card-link" data-toggle="modal" href="#modal4">
-            <div class="card-hover">
-              <div class="card-hover-content">
-                iRoamba
-              </div>
-            </div>
-            <img id="image_card" class="img-responsive" src="media/iroamba.png" alt="Card Image">
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-6 card-item">
-          <a class="card-link" data-toggle="modal" href="#modal5">
-            <div class="card-hover">
-              <div class="card-hover-content">
-                HackTube
-              </div>
-            </div>
-            <img id="image_card" class="img-responsive" src="media/hacktube.png" alt="Card Image">
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-6 card-item">
-          <a class="card-link" data-toggle="modal" href="#modal6">
-            <div class="card-hover">
-              <div class="card-hover-content">
-                Succinct
-              </div>
-            </div>
-            <img id="image_card" class="img-responsive" src="media/succinct.png" alt="Card Image">
-          </a>
-        </div>
-      </div>
-      </div>
-
-      <!-- Modals -->
-      <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modal1">Wreck-It Retail</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-header">Best eBay Hack, HackTech 2019</div>
-            <div class="modal-body">
-            <img class="card-image" src="media/wreckitretail_inner.jpg"><br/><br/>
-              Wreck-It Retail is a fully animated virtual marketplace populated with real products for sale on eBay. It has integrated Leap Motion computer vision controls, allowing the user to navigate the market using hand gestures and eliminating the need for a keyboard or mouse.<br/><br/>
-
-              Built with Node.js and the eBay API.
-            </div>
-            <div class="modal-footer">
-              <a href="https://devpost.com/software/wreck-it-retail" target="_blank"><button type="button" class="btn btn-primary">Learn More</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modal2">Superflick</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-header">Best Disney Hack, HackTech 2018</div>
-            <div class="modal-body">
-            <img class="card-image" src="media/superflick_inner.jpg"><br/><br/>
-              Superflick is an animated comic book reader that contains 70+ years of Marvel comics. With the Myo Armband (a wristband containing an accelerometer), the user can turn pages from a distance with ease.<br/><br/>
-
-              Built with Node.js and the Disney Marvel API.
-            </div>
-            <div class="modal-footer">
-              <a href="https://devpost.com/software/marvelous" target="_blank"><button type="button" class="btn btn-primary">Learn More</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modal3">Spotify World Music</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-header"><a href="http://uscworldmusic.herokuapp.com" target="_blank">Try the demo (takes a few seconds to load)</a></div>
-            <div class="modal-body">
-            <img class="card-image" src="media/uscworldmusic.png"><br/><br/>
-              Spotify World Music is an independent project I created after being inspired by a world music course I took at USC. It visualizes the Top 50 Charts of many different countries around the world and lets you play track samples via an easy-to-use, intuitive design.<br/><br/>
-
-              Built with Node.js and the Spotify Web API.
-            </div>
-            <div class="modal-footer">
-              <a href="https://github.com/nishelat/Spotify-World-Music" target="_blank"><button type="button" class="btn btn-primary">GitHub Repository</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modal4">iRoamba</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-header">Submitted to HackTech 2017<br/>Adopted By iRobot to Teach STEM in Schools</div>
-            <div class="modal-body">
-            <img class="card-image" src="media/iroamba_inner.jpg"><br/><br/>
-              iRoamba is a web control dashboard which serially links to the iRobot Create 2 unit. It enables the user to administer directional commands, such as "drive forward," "drive backward," "turn left," and "turn right," to the unit and also visualizes important data which it receives from the unit's many sensors: cliff sensors, bump sensors, a wall sensor, and wheel drop sensors. On top of that, it allows the user to see the total distance traveled, the current angle of the unit, the rotary encoder counts from both wheels, and the instantaneous velocity of the unit. It also shows a tracking map which dynamically updates with the path of the unit in real-time. All of this information is displayed in a visually pleasing, interactive web page which is responsive and fits on one screen.<br/><br/>
-
-              Built with the Roomba Open Interface, Plotly, and Socket.io.
-            </div>
-            <div class="modal-footer">
-              <a href="https://devpost.com/software/iroamba" target="_blank"><button type="button" class="btn btn-primary">Learn More</button></a>
-              <a href="https://github.com/teresaliu20/hacktech2017" target="_blank"><button type="button" class="btn btn-primary">GitHub Repository</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modal5" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modal5">HackTube</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-header">2nd Place Overall, SBHacks 2017<br/>Best Hack Against Harrassment, SBHacks 2017<br/>Featured as a Staff Pick on Devpost</div>
-            <div class="modal-body">
-            <img class="card-image" src="media/hacktube_inner.jpg"><br/><br/>
-              HackTube automatically analyzes every YouTube video you watch, targeting comments which are degrading and offensive. It is constantly checking the page for hateful comments, so if the user loads more comments, the extension will pick those up. It then blocks comments which it deems damaging to the user, listing the total number of blocked comments at the top of the page. This process is all based on user preference, since the user chooses which types of comments (sexist, racist, homophobic, etc) they do not want to see. It is important to note that the user can disable the effects of the extension at any time. HackTube is not meant to censor constructive criticism; rather, it combats comments which are purely malicious in intent.<br/><br/>
-
-              Built with HTML/CSS and JavaScript.
-            </div>
-            <div class="modal-footer">
-              <a href="https://devpost.com/software/hacktube" target="_blank"><button type="button" class="btn btn-primary">Learn More</button></a>
-              <a href="https://github.com/teresaliu20/-HackHarassment-SBHacks" target="_blank"><button type="button" class="btn btn-primary">GitHub Repository</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modal6" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modal6">Succinct</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-header">Organizer's Choice Award, HackUCI 2017</div>
-            <div class="modal-body">
-            <img class="card-image" src="media/succinct_inner.jpg"><br/><br/>
-              Succinct transforms written essays into visual presentations. It generates images for each slide based on the essay title, and converts essays, paragraphs, and sentences to bullet format. Once the slide title and text are pasted into the box, a slide appears; at the top is the title. On the left, four relevant images appear (all of which can be copied and pasted to the student's choice of presentation software). On the right, bullet points with relevant words are shown; each bullet point corresponds with a sentence from the text, so the longer the text, the more bullets that will be generated.<br/><br/>
-
-              Built with the Google Cloud Natural Language and Flickr APIs.
-            </div>
-            <div class="modal-footer">
-              <a href="https://devpost.com/software/succinct-9wx5mz" target="_blank"><button type="button" class="btn btn-primary">Learn More</button></a>
-              <a href="https://github.com/nishelat/Succinct" target="_blank"><button type="button" class="btn btn-primary">GitHub Repository</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-
-      <div id="logos">
-        <h1 class="text-center" id="employersTitle">Past Employers</h1>
-        <a href="https://www.google.com/" target="_blank"><img src="media/google.png" class="img-fluid logo" alt="Google"></a>
-        <a href="http://teledynelecroy.com/" target="_blank"><img src="media/teledyne.png" class="img-fluid logo" alt="Teledyne LeCroy"></a>
-      </div>
-
-    <footer class="text-muted">
-      <div class="container-fluid">
-        <p>&copy; Nishir Shelat 2020</p>
-        <a href="mailto:nshelat@usc.edu"><img class="link-image" src="media/email.jpg"></a>
-        &nbsp&nbsp&nbsp
-        <a href="https://github.com/nishelat" target="_blank"><img class="link-image" src="media/github.png"></a>
-        &nbsp&nbsp&nbsp
-        <a href="https://devpost.com/nishelat" target="_blank"><img class="link-image" src="media/devpost.png"></a>
-        &nbsp&nbsp&nbsp
-        <a href="https://www.linkedin.com/in/nishelat/" target="_blank"><img class="link-image" src="media/linkedin.png"></a>
-      </div>
-    </footer>
-    </div>
+<html>
+<head>
+	<title>Nishir Shelat</title>
+	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="robot.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="container">
+		<div class="button"><a href="https://drive.google.com/file/d/0B6n5mOU9aai3SWs3UTRkbk45X3M/view?usp=sharing" target="_blank">RESUME</a></div>
+		<div class="button"><a href="https://devpost.com/nishelat" target="_blank">PROJECTS</a></div>
+		<div class="button"><a href="https://github.com/nishelat" target="_blank">GITHUB</a></div>
+		<div id="name">
+			<div id="N1">
+				<div id="N1-LINK1">
+					<div id="N1-LINK2">
+						<div id="N1-LINK3">
+							<div id="N1-END"></div>
+						</div>
+						<div class="N1-JOINT"></div>
+					</div>
+					<div class="N1-JOINT"></div>
+				</div>
+			</div>
+			<div id="I2">
+				<div id="I2-LINK1">
+					<div id="I2-END"></div>
+				</div>
+			</div>
+			<div id="S3">
+				<div id="S3-LINK1">
+					<div id="S3-LINK2">
+						<div id="S3-LINK3">
+							<div id="S3-END"></div>
+						</div>
+						<div class="S3-JOINT"></div>
+					</div>
+					<div class="S3-JOINT"></div>
+				</div>
+			</div>
+			<div id="H4">
+				<div id="H4-LINK1">
+					<div id="H4-LINK2">
+						<div id="H4-END"></div>
+					</div>
+					<div id="H4-LINK3">
+						<div id="H4-LINK4">
+							<div id="H4-END"></div>
+						</div>
+						<div id="H4-LINK5">
+							<div id="H4-END"></div>
+						</div>
+						<div class="H4-JOINT"></div>
+					</div>
+					<div class="H4-JOINT"></div>
+				</div>
+			</div>
+			<div id="I5">
+				<div id="I5-LINK1">
+					<div id="I5-END"></div>
+				</div>
+			</div>
+			<div id="R6">
+				<div id="R6-LINK1">
+					<div id="R6-LINK2">
+						<div id="R6-LINK3">
+							<div id="R6-LINK4">
+								<div id="R6-END"></div>
+							</div>
+							<div class="R6-JOINT"></div>
+						</div>
+						<div class="R6-JOINT"></div>
+					</div>
+					<div class="R6-JOINT"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="intro">
+		<div id="about">
+			<img id="selfie" src="media/me.jpg">
+			<div id="bio">
+				<div id="greeting"><b>Hey there!</b></div>
+				I'm a software engineer based in Silicon Valley. I have a passion for web development and love creating applications for web and mobile devices. In my free time, I also build robots and other electronic gadgets.
+				<br/><br/>
+				So far, I've participated in over a dozen different engineering competitions, winning nine awards for my projects (which span from 3D comic book readers to smart baseball caps). See the full list of projects <a href="https://devpost.com/nishelat" target="_blank">here</a>.
+			</div>
+		</div>
+	</div>
 </body>
-
-<!-- JavaScript -->
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"><\/script>')</script>
-<script type="text/javascript" src="script.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
-<script>
-  $(function () {
-    Holder.addTheme("thumb", { background: "#55595c", foreground: "#eceeef", text: "Thumbnail" });
-  });
-</script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="script.js"></script>
 </html>

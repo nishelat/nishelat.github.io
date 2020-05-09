@@ -1,0 +1,291 @@
+/* LETTER N1 */
+
+#N1 {
+	display: inline-block;
+	margin-left: 0;
+	opacity: 0;
+}
+
+.N1-JOINT {
+	position: absolute;
+	top: -20px;
+	left: -50%;
+	width: 40px;
+	height: 40px;
+	background: #888888;
+	border-radius: 50%;
+}
+
+#N1-LINK1 {
+	position: absolute;
+	width: 20px;
+	height: 150px;
+	bottom: 0;
+	background: #73c773;
+}
+
+#N1-LINK2 {
+	position: absolute;
+	width: 20px;
+	height: 175px;
+	bottom: 100%;
+	background: #91e691;
+	transform-origin: 50% 100%;
+}
+
+#N1-LINK3 {
+	position: absolute;
+	width: 20px;
+	height: 135px;
+	bottom: 100%;
+	background: #73c773;
+	transform-origin: 50% 100%;
+}
+
+#N1-END {
+	width: 15px;
+	height: 30px;
+	border-left: solid 10px #777777;
+	border-right: solid 10px #777777;
+	border-bottom: solid 10px #777777;
+	transform: translate(-22%, -100%);
+}
+
+/* LETTER I2 */
+
+#I2 {
+	display: inline-block;
+	margin-left: 175px;
+	opacity: 0;
+}
+
+#I2-LINK1 {
+	position: absolute;
+	width: 20px;
+	height: 150px;
+	bottom: 20px;
+	background: #adadad;
+}
+
+#I2-END {
+	width: 15px;
+	height: 30px;
+	border-left: solid 10px #777777;
+	border-right: solid 10px #777777;
+	border-top: solid 10px #777777;
+	transform: translate(-23%, 350%);
+}
+
+/* LETTER S3 */
+
+#S3 {
+	display: inline-block;
+	margin-left: 60px;
+	opacity: 0;
+}
+
+.S3-JOINT {
+	position: absolute;
+	top: -20px;
+	left: -50%;
+	width: 40px;
+	height: 40px;
+	background: #888888;
+	border-radius: 50%;
+}
+
+#S3-LINK1 {
+	position: absolute;
+	width: 20px;
+	height: 120px;
+	bottom: 0;
+	background: #73c773;
+	transform-origin: 50% 100%;
+	transform: rotate(90deg);
+}
+
+#S3-LINK2 {
+	position: absolute;
+	width: 20px;
+	height: 120px;
+	bottom: 100%;
+	background: #91e691;
+	transform-origin: 50% 100%;
+}
+
+#S3-LINK3 {
+	position: absolute;
+	width: 20px;
+	height: 120px;
+	bottom: 100%;
+	background: #73c773;
+	transform-origin: 50% 100%;
+}
+
+#S3-END {
+	width: 15px;
+	height: 30px;
+	border-left: solid 10px #777777;
+	border-right: solid 10px #777777;
+	border-bottom: solid 10px #777777;
+	transform: translate(-26%, -100%);
+}
+
+/* LETTER H4 */
+
+#H4 {
+	display: inline-block;
+	margin-left: 200px;
+	opacity: 0;
+}
+
+.H4-JOINT {
+	position: absolute;
+	top: -20px;
+	left: -50%;
+	width: 40px;
+	height: 40px;
+	background: #888888;
+	border-radius: 50%;
+}
+
+#H4-LINK1 {
+	position: absolute;
+	width: 20px;
+	height: 75px;
+	bottom: 0;
+	background: #adadad;
+}
+
+#H4-LINK2 {
+	position: absolute;
+	width: 20px;
+	height: 75px;
+	bottom: 100%;
+	background: #adadad;
+	transform-origin: 50% 100%;
+}
+
+#H4-LINK3 {
+	position: absolute;
+	width: 20px;
+	height: 100px;
+	bottom: 100%;
+	background: #c9c9c9;
+	transform-origin: 50% 100%;
+}
+
+#H4-LINK4 {
+	position: absolute;
+	width: 20px;
+	height: 75px;
+	bottom: 100%;
+	background: #adadad;
+	transform-origin: 50% 100%;
+}
+
+#H4-LINK5 {
+	position: absolute;
+	width: 20px;
+	height: 45px;
+	bottom: 100%;
+	background: #adadad;
+	transform-origin: 50% 100%;
+}
+
+#H4-END {
+	width: 15px;
+	height: 30px;
+	border-left: solid 10px #777777;
+	border-right: solid 10px #777777;
+	border-bottom: solid 10px #777777;
+	transform: translate(-23%, -100%);
+}
+
+/* LETTER I5 */
+
+#I5 {
+	display: inline-block;
+	margin-left: 175px;
+	opacity: 0;
+}
+
+#I5-LINK1 {
+	position: absolute;
+	width: 20px;
+	height: 150px;
+	bottom: 0;
+	background: #73c773;
+}
+
+#I5-END {
+	width: 15px;
+	height: 30px;
+	border-left: solid 10px #777777;
+	border-right: solid 10px #777777;
+	border-bottom: solid 10px #777777;
+	transform: translate(-22%, -100%);
+}
+
+/* LETTER R6 */
+
+#R6 {
+	display: inline-block;
+	margin-left: 75px;
+	padding-right: 80px;
+	opacity: 0;
+}
+
+.R6-JOINT {
+	position: absolute;
+	top: -20px;
+	left: -50%;
+	width: 40px;
+	height: 40px;
+	background: #888888;
+	border-radius: 50%;
+}
+
+#R6-LINK1 {
+	position: absolute;
+	width: 20px;
+	height: 170px;
+	bottom: 0;
+	background: #adadad;
+}
+
+#R6-LINK2 {
+	position: absolute;
+	width: 20px;
+	height: 90px;
+	bottom: 100%;
+	background: #c9c9c9;
+	transform-origin: 50% 100%;
+}
+
+#R6-LINK3 {
+	position: absolute;
+	width: 20px;
+	height: 90px;
+	bottom: 100%;
+	background: #adadad;
+	transform-origin: 50% 100%;
+}
+
+#R6-LINK4 {
+	position: absolute;
+	width: 20px;
+	height: 70px;
+	bottom: 100%;
+	background: #c9c9c9;
+	transform-origin: 50% 100%;
+}
+
+#R6-END {
+	width: 15px;
+	height: 30px;
+	border-left: solid 10px #777777;
+	border-right: solid 10px #777777;
+	border-bottom: solid 10px #777777;
+	transform: translate(-22%, -100%);
+}

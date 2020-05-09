@@ -1,0 +1,112 @@
+body {
+	background: #f5f5f5;
+	margin: 0;
+	font-family: 'Varela Round', sans-serif;
+}
+
+/* TOP SECTION */
+
+.button {
+	font-size: 17px;
+	float: right;
+	margin: 30px 45px 0 0;
+	cursor: pointer;
+	color: #444444;
+	transition: 0.2s;
+}
+
+.button:hover {
+	transform: scale(1.1);
+	color: #579c57;
+}
+
+.button > a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#container {
+	position: relative;
+	height: 85vh;
+}
+
+#name {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 900px;
+	height: 200px;
+	text-align: center;
+	pointer-events: none;
+}
+
+/* INTRODUCTION SECTION */
+
+#intro {
+	background: #ffffff;
+}
+
+#about {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+
+#selfie {
+	display: inline-block;
+	width: 320px;
+	vertical-align: middle;
+	margin: 5%;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	pointer-events: none;
+}
+
+#bio {
+	font-size: 19px;
+	display: inline-block;
+	width: 40%;
+	text-align: left;
+	vertical-align: middle;
+	margin: 5%;
+	color: #444444;
+}
+
+#bio > a {
+	text-decoration: none;
+	color: #337ab7;
+	transition: 0.2s;
+}
+
+#bio > a:hover {
+	color: #579c57;
+}
+
+#greeting {
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1100px) and (orientation: portrait) {
+	.button {
+		font-size: 27px;
+		margin: 45px 45px 0 0;
+	}
+	#container {
+		height: 45vh;
+	}
+	#selfie {
+		width: 50%;
+		margin: 10% 10% 2% 10%;
+	}
+	#bio {
+		width: 80%;
+		font-size: 47px;
+		text-align: center;
+	}
+	#greeting {
+		font-size: 67px;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+}

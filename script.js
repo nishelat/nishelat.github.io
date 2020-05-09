@@ -1,111 +1,50 @@
-particlesJS("particles-js", {
-  "particles": {
-    "number": {
-      "value": 1000,
-      "density": {
-        "enable": true,
-        "value_area": 789.1476416322727
-      }
-    },
-    "color": {
-      "value": "#ffffff"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      }
-    },
-    "opacity": {
-      "value": 0.48927153781200905,
-      "random": false,
-      "anim": {
-        "enable": true,
-        "speed": 0.2,
-        "opacity_min": 0,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 1.5,
-      "random": true,
-      "anim": {
-        "enable": true,
-        "speed": 2,
-        "size_min": 0,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": false,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 0.5,
-      "direction": "none",
-      "random": true,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": false,
-        "mode": "bubble"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "repulse"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 400,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 100,
-        "size": 1,
-        "duration": 5,
-        "opacity": 1,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 150,
-        "duration": 100
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
-});
+$.fn.animateRotate = function(startAngle, endAngle, duration, easing) {
+	var args = $.speed(duration, easing);
+	var step = args.step;
+	return this.each(function(i, e) {
+		args.step = function(now) {
+			$.style(e, 'transform', 'rotate(' + now + 'deg)');
+			if(step) return step.apply(e, arguments);
+		};
+		$({deg: startAngle}).animate({deg: endAngle}, args);
+	});
+};
 
-document.getElementsByTagName('canvas')[0].addEventListener("click", function() {
-  document.getElementById("hint").innerHTML = "Awesome";
-  document.getElementById("hint").style.animation = "fadeout 4s";
-  document.getElementById("hint").style.opacity = 0;
-});
+const duration = 500;
+const easing = "swing";
+
+setTimeout(() => {
+	$("#N1").fadeTo("slow", 1);
+	$("#N1-LINK2").animateRotate(180, 140, duration, easing);
+	$("#N1-LINK3").animateRotate(-180, -140, duration, easing);
+}, 0 * duration);
+
+setTimeout(() => {
+	$("#I2").fadeTo("slow", 1);
+}, 0.5 * duration);
+
+setTimeout(() => {
+	$("#S3").fadeTo("slow", 1);
+	$("#S3-LINK1").animateRotate(90, 60, duration, easing);
+	$("#S3-LINK2").animateRotate(180, -120, duration, easing);
+	$("#S3-LINK3").animateRotate(180, 130, duration, easing);
+}, 1 * duration);
+
+setTimeout(() => {
+	$("#H4").fadeTo("slow", 1);
+	$("#H4-LINK2").animateRotate(0, 0, duration, easing);
+	$("#H4-LINK3").animateRotate(0, 90, duration, easing);
+	$("#H4-LINK4").animateRotate(-180, -90, duration, easing);
+	$("#H4-LINK5").animateRotate(0, 90, duration, easing);
+}, 1.5 * duration);
+
+setTimeout(() => {
+	$("#I5").fadeTo("slow", 1);
+}, 2 * duration);
+
+setTimeout(() => {
+	$("#R6").fadeTo("slow", 1);
+	$("#R6-LINK2").animateRotate(180, 125, duration, easing);
+	$("#R6-LINK3").animateRotate(0, 110, duration, easing);
+	$("#R6-LINK4").animateRotate(-180, -110, duration, easing);
+}, 2.5 * duration);
